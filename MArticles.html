@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="IMG/Tarot-Simble.png" type="image/png"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="Main.css" type="text/css" id="pagestyle">
+  <link rel="stylesheet" href="M-articles-Default.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <title>Tarot Magazine Articles</title>
+</head>
+
+<body class="home">
+
+  <nav class="navbar navbar-custom navbar-expand-md navbar-light justify-content-md-center justify-content-start fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header justify-align-center">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+        <ul class="navbar-nav nav justify-content-center">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="issues.html" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Historical Theme
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="IssueStage.html">Default</a>
+              <a class="dropdown-item" href="IssueStage.html">1700 s</a>
+              <a class="dropdown-item" href="IssueStage.html">1800 s</a>
+              <a class="dropdown-item" href="IssueStage.html">1900 s</a>
+              <a class="dropdown-item" href="IssueStage.html">2000 s</a>
+            </div>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="About-Us.html">About Us</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="Disclaimer.html">Disclaimer</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="Documentation.html">Documentation</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="extracontainer">
+    <div class="container-fluid">
+      <div class="row pt-3">
+        <!-- This Is The First Article Details-->
+        <div class="col-md-4" id="infobox1">
+          <div class="card text-white d-bg mb-3 infobox">
+            <div class="card-header">
+              <div class="card-title">
+              </div>
+            </div>
+            <div class="card-body top-card">
+              <div class="card-text">
+                <p id="cauthor"></p>
+                <p id="authordescr"></p>
+                <p id="date_article"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- This Is The Second Article Details-->
+        <div class="col-md-4" id="infobox2">
+          <div class="card text-white d-bg mb-3 infobox">
+            <div class="card-header">
+              <div class="card-title">
+              </div>
+            </div>
+            <div class="card-body top-card">
+              <div class="card-text">
+                <p id="cauthor"></p>
+                <p id="authordescr"></p>
+                <p id="date_article"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- This Is The Third Article Details-->
+        <div class="col-md-4" id="infobox3">
+          <div class="card text-white d-bg mb-3 infobox">
+            <div class="card-header">
+              <div class="card-title">
+              </div>
+            </div>
+            <div class="card-body top-card">
+              <div class="card-text">
+                <p id="cauthor"></p>
+                <p id="authordescr"></p>
+                <p id="date_article"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="meta-section" id="meta-section">
+      <div class="card">
+        <div class="card-header">
+          <button class="btn btn-info btn-sm btn-meta" onclick="metaDataHideShow()">MD</button>
+			    <strong>Metadata</strong>
+        </div>
+  			<ul class="list-group list-group-flush" id="articlescheckbox">
+          <li>
+            <div class="form-check">
+  						<input class="form-check-input callmetadata" active="0" type="checkbox" value="" id="pers">
+  						<label class="form-check-label" for="pers">
+  						  People
+  						</label>
+  					</div>
+  				</li>
+  				<li>
+            <div class="form-check">
+  						<input class="form-check-input callmetadata" type="checkbox" active="0" value="" id="key">
+  						<label class="form-check-label" for="key">
+  							Keywords
+  						</label>
+  					</div>
+          </li>
+  				<li>
+            <div class="form-check">
+  						<input class="form-check-input callmetadata" type="checkbox" active="0" value="" id="date">
+  						<label class="form-check-label" for="date">
+  							Dates
+  						</label>
+  					</div>
+          </li>
+          <li>
+            <div class="form-check">
+  						<input class="form-check-input callmetadata" type="checkbox" active="0" value="" id="pl">
+  						<label class="form-check-label" for="pl">
+  							Places
+  						</label>
+  					</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <section class="articles">
+    <div class="site-wrap">
+      <section>
+        <!-- This Is The First Article -->
+        <div id="article1" class="default-style">
+          <article>
+            <div class="box bg-1">
+              <div class="text-container">
+                <p class= Atransparent><a name="top-A1">Article 1</a></p>
+                <h2 class="main-title">Japanese<span class="key" about="Tarot"> Tarot </span>Cards</h2>
+                <h3 class="author"><span class="pers" about="Laura Miller">Laura Miller</h3>
+                <p class="university">University of Missouri <br> St. Louis, US</p>
+                <p class="email">millerlau@umsl.edu</p>
+                <br>
+                <p class="abstract initialp">This essay looks at selected images from tarot decks designed in Japan. Tarot decks reflect a deliberate adaptation process across both cultural and temporal borders, with visual components created and customized for a Japanese viewer. My aim is to consider the nature of these changes in imagery and to focus attention on an under-analyzed and mostly femalegendered domain. In particular, I look at the way the medieval European people and elements originally found on the cards are replaced with images from the world of Japanese art, history, and popular culture. These substitutions either gloss over the gaps between Western and Japanese world views or meld them into a new form, allowing the tarot entry into a different or hybrid metaphysical culture. Attention to tarot cards is important because of their great economic and cultural impact in contemporary Japan. A widespread love of tarot in Japan provides insight into domains of pleasure, spiritual exploration, and fandom.</p>
+                <hr>
+                <p class="abstract"><em>Keywords:</em> Japan, tarot, visual imagery, feminized divination, cultural hybridity</p>
+                <hr>
+                <p class="initialp">A widespread love of tarot in Japan provides insight into domains of pleasure, spiritual exploration, and fandom. Tarot readings are delivered through face-to-face encounters in divination shops, in malls and busy shopping areas, at festivals and museum events, on tours, and in cafes and bars. Fans are also doing tarot d ivination through computer games, iPhone and iPod applications, automated arcade booths, and online divination sites.<sup><a href="#Footnote1" class="footnote">1</a></sup> The best tarot readers, or perhaps those most savvy at marketing their talent, have become national celebrities. The tarot decks and ways of reading them are so well-known and specialized in Japan that divination services often advertise by calling attention to the type of reading performed, including Inspiration Tarot (reikan tarotto), I-Ching Tarot (ekisen tarotto), Spiritual Tarot (supirichuaru tarotto), Western Tarot (seiyō tarotto), and Eastern Tarot (tōyō tarotto). There are many divination vocational schools that offer courses and workshops on how to read and understand tarot cards. These opportunities for learning about tarot invite non-specialist, ordinary people to become more involved in gaining access to tarot culture. Anyone may work as an amateur card designer or non-professional card reader. Since at least the <span class="date" about="1980">1980</span>s the divination industry, including <span class="key" about="Tarot"> tarot </span> card services and production, has been dominated by girls and women. One consequence of this feminization trend in the industry is that female preferences have taken the lead in card layout design and tastes in content. Another is that because it is trivialized as a female domain, tarot culture is routinely neglected by scholars despite its cultural heft and economic weight.</p>
+                <br>
+                <p> Among an assortment of things I purchased in Japan is a card that shows a woman running down the street with a cute white puppy hanging onto her leg (<em>Figure 1</em>). She jogs along a magenta ground, a blue sky with a purple butterfly and bright sun suspended above. She is wearing pink panties, and a yellow top has slipped beneath her exposed breasts. The words “The Fool” are written in English below the scene. Without context, it might be hard to recognize this as a card from a tarot divination deck. It was created by writer Akatsuki Reika and artist Takano Aya (2010). Takano garnered fame as the protégé of the artist Murakami Takashi and his Superflat movement. Their deck, named Spiritual Tarot, features nude or barely clothed women moving through magical tableaus filled with arcane signs and richly colored settings. These whimsical divination cards join hundreds of other tarot that have been created in Japan, most of them within the last two decades. One collector lists more than 1,500 Japan-made decks in his global compendium.<sup><a href="#Footnote2" class="footnote">2</a></sup> Japanese tarot come in many styles, and are created by professional artists, advertisers, and fans.</p>
+                <br>
+                <img src="IMG/Default/1-Figure1.jpg" class="img" alt="Japanese Tarot Cards - Figure1">
+                <p align="center">Figure 1: Spiritual Tarot<br>(Akatsuki and Takano 2010)</p>
+                <br>
+                <p>As a way to think about this increasingly popular practice, this essay will look at images from a few of the numerous tarot decks designed in Japan. Additional selected cards from the decks discussed here are found in Appendix 1: Supplementary Figures of Japanese Tarot Cards. I find that these tarot reflect a deliberate adaptation or creolization process across both cultural and temporal borders, with visual components customized for a Japanese viewer. My aim is to consider the nature of these changes in imagery and to focus attention on an under-analyzed and mostly female-gendered domain. In particular, the medieval Europeans originally found on the cards are often purged or altered, replaced or mixed with images from the world of Japanese art, history, and popular culture.</p>
+                <br>
+                <p>This survey of <span class="key" about="Tarot"> tarot </span> in Japan is based on anthropological ideas about cultural borrowing and innovation. One way to approach the cards is to think about them as beyond cultural appropriation, a term that is fraught with political debate. In its most common anthropological sense, appropriation simply means the adoption or use of elements from an outside or different cultural tradition into another culture. Currently, the construction “cultural appropriation” is best known to mean the taking of cultural property, rituals, or elements within a context of colonization or unequal power. It refers to inappropriate acts of appropriation from a dominant group in which the borrowed elements are used for consumption or feishization. An example is the use of sacred Native American ritual and clothing in mainstream U.S. sports entertainment or as a Halloween costume.</p>
+                <br>
+                <p>In contrast to this negative form of cultural appropriation, some cultural p ractices are the product of creative borrowing that produces a new and unique amalgam of disparate elements. This mixing, called syncretism, creolization, or cultural hybridity, suggests more than simple borrowing, as it denotes the creation of new cultural forms. It is in this context that I place this survey of tarot in Japan. I believe that these new tarot reflect a complex type of cultural hybridity that often confounds easy separation between Japanese and European or American elements. In a similar vein, the historian <span class="pers" about="Gruzinski">Gruzinski</span> (2002, 85) describes the clever appropriations from Europe that together with indigenous Mexican elements formed a “strange, fascinating, inextricable weave.” He notes that such intermingling takes place in layers of time that “combine as much as they contrast” (Gruzinski 2002, 10). Similarly in the case of tarot, it is difficult to determine when or where certain elements in the imagery originated. I try my best to track these bits of visual culture, but nevertheless invite others to refine my analysis, to see new themes and elements that make these cards even more complex and intriguing. In addition, what we see in tarot is not always the product of a simple, one-time, Japan-West encounter. There are “multiple intermediate states and never just two cultures meeting across a clean border” (Gruzinski 2002, 178). The blending of tarot elements in Japan takes place over decades and with different creators and target audiences involved.</p>
+                <br>
+                <p>Finally, there is the problem of cultural authenticity. Although we can sometimes discern elements as being markedly from either Japanese or EuroAmerican visual culture, these are always generalizations that are open to criticism and challenge. For one thing, finding “authentic” culture in the current global domain is no easy matter. This discontinuity of culture in the modern world was beautifully stated by the anthropologist James Clifford (1988, 14): “Twentieth-century identities no longer presuppose continuous cultures or traditions. Everywhere individuals and groups improvise local performances from (re)collected pasts, drawing on foreign media, symbols, and languages.” An example discussed below is the use of the historical personage Himiko as the Figure of the High Priestess in Japanese tarot decks. Himiko did not arrive on the cards straight from history. Because so little is known about her, especially her appearance, the depictions are pure conjecture and imagination. In some cases she is holding a written text or book, which is historically inaccurate as there was no writing system in Japan during Himiko’s time (170~248 CE). Yet use of Himiko on tarot cards is not simply a decorative move, and she functions well in this context as a symbol of current Japanese concerns and interests.</p>
+                <br>
+                <p>In addition to their great beauty, creativity, and expressive energy, these new tarot decks function as visual mediations as they lure the divination seeker into a strange land where bodies rise from coffins, men wear snakes as belts, and English knights ride black horses and carry pentagrams. The hybrid or original cards from Japan contain new elements or rhetorical visual devices that help to close the gap between cultures. Often the new tarot of Japan illustrate cultural displacement. For example, the card known as the High Priestess usually shows a female pope sitting on a throne, holding a copy of the Jewish Torah. But on some Japanese cards the High Priestess holds a different type of text: scrolls with non-Latin script or books with odd, invented glyphs on them. Understanding the semiotics of tarot, as well as their role in arts practice, spiritual work, and creative pastime, gives us a new sense of the cultural landscape of Japan today, where anxieties over the economy, the nation’s global status, and even the geological safety of the land itself inspire people to search for hope.</p>
+                <br>
+                <p>Attention to tarot cards is important because of their great economic and cultural status. The tarot industry is enormously lucrative, and tarot cards and tarot services generate billions of yen each year in profit. Even so, many aspects of tarot culture pass under the mainstream radar and avoid male-controlled routes of distribution. I am interested in looking at tarot not simply because it is a substantial market, but also because it provides recognition of female interests and activities. Despite its presence in a spectrum of media and contexts, it is rarely studied, and is usually trivialized when it is noticed at all. The Japanese media, academic, and business establishments most often report on the feminized divination industry with alarm, mockery, or disdain.</p>
+                <br>
+                <p>What is tarot? How did it develop in Japan? A cursory examination of the cards themselves suggests that not only are they popular material artifacts that link to other aspects of culture, they are also objects that reach into the imagination through color, design and symbolism. Tarot artists have been very successful in exploiting a spectrum of visual idioms in order to attract Japanese viewers and fans. A short discussion of the history of tarot and their popularity in Japan will help to ground my discussion of specific cards and trends.<sup><a href="#Footnote3">3</a></sup></p>
+                <br>
+                <h3 class="title">Tarot in Japan</h3>
+                <br>
+                <p class=".initialp">Enthusiasts often debate the origin of tarot cards, even going so far as to claim an ancient lineage to the Babylonians. Most historians agree, however, that the cards began as simple playing cards that entered Europe from Islamic culture around the fourteenth century. Eventually they took on their role as a divination device and acquired the many symbolic meanings and conventions that are associated with them today. Most tarot decks are made up of 78 cards which are divided into two sets: the 22 major arcana, and the 56 minor arcana suit cards. The major arcana cards represent iconic principles (such as Temperance, Justice, Death, and so on), or archetypes (such as the Fool, the Magician, the High Priestess, the Hermit, and others). One of the most popular decks used as a jumping-off point for Japanese artists who want to modify tarot imagery is known as the Rider-Waite-Smith Tarot. Published in London in 1909 by the Rider company, it was illustrated by Pamela Colman Smith (1878–1951) with collaboration on thinking about the meanings from Sir Arthur Waite. Tarot cards are used to forecast the future, for spiritual reflection, and as a psychological tool for self-understanding. They are shuffled and cut into piles by either the person doing the divination or the seeker, and are then arranged into a stack. Cards are selected from the stack and placed into one of several possible face-up layouts. The reader uses the images and symbols on the cards to address the questions or themes of concern to the seeker.</p>
+                <br>
+                <p>Historians of the occult in Japan mention tarot as having been present there at least by the 1930s, and for the decades up until the 1970s they were part of a general fascination with the occult. Most of the early decks were created by men. Gradually, during the 1970s, tarot began to be widely appreciated and recognizable outside of the avant-garde realms that were dominated by male writers. An example are the crude cut-out cards drawn by Akatsuka Fujio (1935–2008). Akatsuka was a comic manga artist who published a book of cut-out craft items in 1975. It included paper coffee cups, animal figures, and several pages of tarot cards (Akatsuka 1975, <b>Figure 2</b>). Akatsuka’s jokey cards most likely appealed to his male fans more than the young women who were becoming interested in tarot at the time.</p>
+                <br>
+                <img src="IMG/Default/1-Figure2.jpg" alt="Japanese Tarot Cards - Figure2">
+                <p align="center"><b>Figure 2</b>: Gag cut-out tarot (Akatsuka 1975)</p>
+                <br>
+                <p>Today most female tarot designers, readers, and aficionados point to the fortune-telling magazine <i>My Birthday</i> as the key to their passion for the cards. Targeting young girls and teens, <i>My Birthday</i> was published between 1979 and 2006 and was nicknamed <i>Maiba</i>. The magazine frequently contained insert pages of punch out tarot cards on strong card stock that readers could easily retrieve. The magazine also provided guidelines on how to do card readings with friends. Famous tarot readers and card producers sometimes mention <i>My Birthday</i> as the inspiration for their career paths (an example is found in Bi and Umezawa 2004, 2). In 2012 the publisher released a nostalgia issue of <i>My Birthday</i> that included six insert pages of all 78 tarot cards in beautiful color on heavy card stock (Jitsugyo no Nihonsha 2012, <b>Figure 3</b>). Periodicals such as this, as well as other magazines, books, and manga, were significant factors in the development and spread of tarot among girls and women, and are one reason they became so entrenched in female culture.</p>
+                <br>
+                <img src="IMG/Default/1-Figure3.jpg" alt="Japanese Tarot Cards - Figure3">
+                <p align="center"><b>Figure 3</b>: Tarot cut-out page from nostalgia issue of My Birthday magazine, illustrated by Matsuzaki Akemi <br>(Jitsugyo no Nihonsha 2012)</p>
+                <br>
+                <p>Although Tarot became tremendously popular in the 1970s, an escalation in appreciation drove the production and consumption of original and hybrid decks after 2000 as Japan entered its second decade of economic stagnation. New designs attract consumers and express creative responses to the moment. Thus, every year a range of new tarot are produced which reflect different ways that people participate in the world of tarot, from serious pursuit to social play. Whether for amusement or for serious inquiry into the future, the majority of decks include only the 22 major arcana cards. There is a similar proliferation of novel decks outside of Japan, where we find new tarot designed by artists such as Salvador Dali, or encoded with themes such as steampunk, zombie, or Celtic. Nevertheless, there is a staggering range of creativity and diversity of card themes and types found in Japan. The Japanese card hunter’s passion has resulted in astonishingly innovative new design motifs, such as a unique deck named the Particle Tarot (Izumi and Kumagai 2009), which presents Mesoamerican imagery alongside bold ornamental fragments and black outline art (<b>Figure 4</b>).</p>
+                <br>
+                <img src="IMG/Default/1-Figure4.jpg" alt="Japanese Tarot Cards - Figure4">
+                <p align="center"><b>Figure 4:</b> Particle Tarot <br>(Izumi and Kumagai 2009)</p>
+                <br>
+                <p>The new cards predominantly reflect the aesthetic preferences of female artists and consumers. In some cases the cards are intentionally humorous and playful. Often, they indicate great effort to domesticate imagery and symbolism through use of distinctly Japanese themes, religion, and historical characters. Some are based on characters from the worlds of popular culture, including Pokemon, Evangelion, Gundam, and the Sony Cat mascot. Famous manga creator Mizuki Shigeru (1922–2015) produced a tarot set that features some of the goblins, phantoms, and other supernatural beings known as <i>yōkai</i> that he helped to popularize (Mizuki 2002). Tarot card imagery is found in all types of media and usually reflects motifs that will appeal to different audiences. Many of the cards have substituted animals for human figures, reflecting a desire to sidestep obvious ethnic and gendered portraits.</p>
+                <br>
+                <p>Some of the punch-out tarot found in magazines are of high quality in terms of their design and printed color, especially for an item that is free. But not all punch-out magazine tarot are particularly nice or meant to last very long. An example is a deck named Love Love Tarot illustrated by the artist Fukuda Reiko (2003). The cards are small and printed in a limited palette (lots of pink!) on flimsy paper (<b>Figure 5</b>).</p>
+                <br>
+                <img src="IMG/Default/1-Figure5.jpg" alt="Japanese Tarot Cards - Figure5">
+                <p align="center"><b>Figure 5</b>: Love Love Tarot <br>(Fukuda 2003)</p>
+                <br>
+                <p>Contrasting with the cheaply made tarot one may get as a magazine s upplement, hundreds of premium, lushly produced decks are available for purchase in shops, bookstores, and online. An example is the gorgeous tarot designed by the artist Kasai Ayumi (Kasai and Moon Princess Himiko 2002). Kasai is a popular manga artist who specializes in fantasy, Boys Love, erotic romance, and historical manga. Creating brand tarot is an important side project for Kasai and other artists since it provides a way for them to expand and maintain their fanbase. Kasai uses saturated royal hues to depict novel scenes that meld both Asian and non-Asian elements. For example, on her version of the Queen of Pentacles card (one of the 56 minor arcana suit cards, equivalent to the Queen of Diamonds in the modern playing card deck) the queen is represented as a chimerical mermaid sea snail who is playing a bowed string instrument similar to the an ancient Chinese <i>erhu</i> (<b>Figure 6</b>).</p>
+                <br>
+                <p>The innovative embellishments and artistic interpretations found in cards like the ones designed by Kasai are a significant aspect of their popularity.</p>
+                <br>
+                <img src="IMG/Default/1-Figure6.jpg" alt="Japanese Tarot Cards - Figure6">
+                <p align="center"><b>Figure 6:</b> Love and Mystery Tarot <br>(Kasai and Moon Princess Himiko 2002)</p>
+                <br>
+                <h3 class="title">Tarot Aesthetics and Themes</h3>
+                <br>
+                <p class=".initialp">In looking at the variety of tarot now available in Japan, it is clear that by recasting traditional tarot images into new visual idioms, tarot has been able to successfully take its place alongside other visual art forms, such as manga. I would like to point out a few of the specific ways that artists and producers have been able to make tarot so appealing to women and girls. Although the underlying allegorical m eanings might remain, the images are often quite novel and stunning. As the primary producers and consumers of tarot, women and girls have had a considerable impact on tarot culture.</p>
+                <br>
+                <p>Many of the new tarot decks encode aesthetic preferences that are circulating in female culture. The concept of cuteness, or <i>kawaii</i>, is globally understood as a defining trait of Japanese mass culture. Cute Japanese mascots, fashions, and everyday consumer goods are now broadly consumed and adored around the world. Cute tarot cards are common and widely loved. An example of this most recognizable flavor of straight-up cuteness is a deck produced by the prolific card designer named Kagami Ryūji (2007) in which he used the early 1975 Sanrio characters Little Twin Stars (<b>Figure 7</b>). Little Twin Stars is the name for a pair of siblings called Kiki and Rara. Kagami’s Sparkling Love Tarot features the angelic siblings in scenes that have been cleansed of negative imagery. The Devil card, for example, presents the two in a visual story that denotes someone with devilish intent: Rara mischievously tries to surprise Kiki by giving him a concealed cat in a box. Instead of the towering horned satyr, a lecherous goat-man typically found on the traditional Western tarot, this version lurches toward cute overload. Beloved characters from childhood strategically replace odd foreign supernatural beings. The card’s original meaning of addiction to carnal pleasures and bondage to materialism has been transformed into the idea of devilish prankery and an intention to tease or shock. This type of displacement is common in new decks in Japan and is a theme I will return to later.</p>
+                <br>
+                <img src="IMG/Default/1-Figure7.jpg" alt="Japanese Tarot Cards - Figure7">
+                <p align="center"><b>Figure 7</b>: Little Twin Stars and devilish intent (Kagami 2007)</p>
+                <br>
+                <p>Many Japanese tarot cards are intentionally humorous and playful. In the Hello Kitty deck, the new version of the Devil card depicts Sanrio’s famous Kitty with her paw covering her lower face as if in embarrassment about the forbidden things she is thinking about—jewels, a donut, pudding, and a candy, as revealed to us in a thought bubble. These images have popped into Kitty-chan’s head because the Devil is tempting her (Kagami 2009, <b>Figure 8</b>). When one’s heart is consumed with objects of desire, this is temptation. Anyone might identify with Kitty’s encounter with the Devil and recognize their own fatal attractions in it.</p>
+                <br>
+                <img src="IMG/Default/1-Figure8.jpg" alt="Japanese Tarot Cards - Figure8">
+                <p align="center"><b>Figure 8:</b> The Devil temps Miss Kitty (Kagami 2009)</p>
+                <br>
+                <p>While Japanese cute has taken on a flat, mostly saccharine meaning around the globe, we find that in Japanese girl culture there’s been an evolution and diversification in types of cuteness. One kind of cute is <i>guro kawaii</i> (grotesque cute), which combines elements of both the adorable and the warped, unnatural, or creepy. In the last fifteen years, the grotesque cute aesthetic, together with the fantastical and mystical, has become one of the favored styles in the world of tarot. A perfect example of this is the Loveable Girl Skeleton deck created by Hoshi Saori and Satō Yūichirō (2013). Their deck features two characters: a skeleton prince and a skeleton maid. The maid concept is based on the costume of the cafe worker in the maid cafe industry, where young women (primarily) dress up in frilly French maid outfits and serve coffee and bad, microwaved food. On one card, the skeleton maid takes the role of the Magician (usually a male Figure in EuroAmerican decks, <b>Figure 9</b>). The table before the skeleton maid magician is laden with objects representing the four suits, and her pose, as well as the infinity symbol floating above her head, are all similar to those found on the most popular decks outside of Japan. The cute grotesque maid skeleton is a familiar shape in a cryptic scene, making it <i>guro kawaii</i>, familiar and, indeed, loveable. While the esoteric symbolism nods to European tarot imagery, the grotesque cuteness adapts it to Japanese sensibilities.</p>
+                <br>
+                <img src="IMG/Default/1-Figure9.jpg" alt="Japanese Tarot Cards - Figure9">
+                <p align="center"><b>Figure 9:</b> Cute grotesque aesthetics (Hoshi and Satō 2013)</p>
+                <br>
+                <p>New tarot decks in Japan frequently use animals in place of the medieval human figures that originally populated the decks. This substitution strategy has the positive effect of presenting figures that are not gendered or racially marked, thus turning them into characters that anyone might identify with. For example, the Bi Anjeri Tarot features sweet animal drawings (Bi and Umezawa 2004). Bi wrote that she wanted to design a deck that was easy to understand and that would also help to alleviate worry by giving the user pleasant images with uplifting signs. The card Temperance, for example, denotes moderation, balance, and harmony. For this card, most European decks depict a female or transgender person mixing liquid by pouring it from one vessel to another. In some decks the Figure signifies balance by having one foot on land and the other in a body of water. The Bi Anjeri Tarot features instead a small black and white dog with adorably big black eyes. The playful pooch wears a green dress and sports perky red bows on each ear (<b>Figure 10</b>). She is watering a strawberry plant and a fish bowl from two water cans held in two of her paws. The European notion of mixing wine with water as an effort towards moderation is lost, but no matter. Recasting the Figure as a dog in perfect balance achieves the same allegorical goal and is pleasant to behold.</p>
+                <br>
+                <img src="IMG/Default/1-Figure10.jpg" alt="Japanese Tarot Cards - Figure10">
+                <p align="center"><b>Figure 10:</b> Balance in all things (Bi and Umezawa 2004)</p>
+                <br>
+                <p>Animals standing in for humans ask viewers to insert themselves into the scene, thus giving them a grounded, personal handle on the tarot’s meaning. For example, Dayan’s Tarot depicts both animal and human characters performing the esoteric scenes and poses (Kagami and Ikeda 2005, <b>Figure 11</b>). The cards are derived from Ikeda Akiko’s books about a cat named Dayan and his compatriots who live in the fantasy village of Wachifield. In the Empress card, meant to symbolize a plentiful harvest and female power, the Mother Bunny is surrounded by five child bunnies. In place of a luxuriously gowned noblewoman seated in her lush garden holding a scepter, this new symbol of rabbit fecundity is wearing an ochre cloak, and has a green wreath on her head. She is holding a sheath of newly harvested wheat. Again, the new tarot preserves the meaning of the Empress but does so in a way that recalls the magical familiarity of the Japanese children’s books.</p>
+                <br>
+                <img src="IMG/Default/1-Figure11.jpg" alt="Japanese Tarot Cards - Figure11">
+                <p align="center"><b>Figure 11:</b> The Empress in Wachifield (Kagami and Ikeda 2005)</p>
+                <br>
+                <p>The deployment of adorable animals as substitutes for humans should not be interpreted as simply catering to a cultural craving for the aesthetics of cuteness. In fact, it is a strategy employed in multiple areas of popular culture that serves to allow wider identification with the figures, and is also reflected in such things as public service posters, etiquette books, and regional mascots (Miller 2010). In the case of tarot, replacement of medieval European queens, squires, popes, and hermits allows a non-white audience to more easily identify with the images. The animals strip the figures of ethnicity, nationality, and, in some cases, gender. In addition to Hello Kitty and Dayan, tarot featuring pandas, bat princesses, beckoning cats, penguins, r abbits, white gerbils, Inoue Toro the Sony cat, and many more as their main characters abound. These non-human characters invite the Japanese girl or woman into dialogue with a medieval foreign world, or with a newly formed intermediate world. They welcome Japanese people into the fold, where they join a sisterhood of tarot-knowers and lovers.</p>
+                <br>
+                <p>Adaptation from European images to Japanese ones takes other forms, too. Tarot devotees also use the deck as a canvas to explore symbolic meanings with images from Japanese history and religion. These new interpretive frames might retain the core archetypes of the cards or the symbolic meanings associated with them, but recast the figures as ones familiar to a Japanese audience. The producers and artists who 20 make these new cards study tarot lore and history and are therefore k nowledgeable about the traditional Christian-infused imagery and symbolism. Yet they also know that the esoteric references will not necessarily be meaningful or particularly attractive or interesting in a Japanese context, so inserting native archetypes and symbols into the tarot milieu proves to be a savvy and successful approach. It is also somewhat ironic that a borrowed Western form of divination now serves as a vehicle for a revived interest in Japanese history among young women in Japan.</p>
+                <br>
+                <p>There are many decks that draw on figures from Japanese legends and t radition, such as Yamamoto Naoki ’s (2014) tarot based on Japanese mythology. Similarly, Yasokawa Keiichi (2014) uses well-known characters and images from Japanese folktales to illustrate his deck. The card for Strength, for example, features Kintarō, a famous plump boy with superhuman strength. For the card representing the Hierophant (also known as The Pope or The High Priest), Yasokawa depicts a statue of the Bodhisattva Jizō. A Bodhisattva is a being on the path to becoming a Buddha. Using a Buddhist deity Figure as a substitution for a human religious practitioner is an interesting ploy that most likely indexes the ubiquity and popularity of Jizō rather than his role as a Bodhisattva.</p>
+                <br>
+                <p>One of the most arresting decks I have encountered uses deities and mytho-historical personages from one of the earliest written chronicles in Japan, the <i>Kojiki</i> (Records of Ancient Matters, compiled 711–712). Some of the substitutions are logical: The Sun Goddess Amaterasu for the Sun card, or Tsukiyomi; the Deity of the Moon, for the Moon Card; and Ninigi, Japan’s first mythological emperor, for the Emperor card. Others are more idiosyncratic, such as Yamatohime-no-mikoto for the Hermit (<b>Figure 12</b>). In the <i>Kojiki</i> account Yamatohime-no-mikoto was commissioned by her father, the emperor Suinin (11th emperor according to the mythology), to locate a suitable place for the enshrinement of the Sun Goddess, Amaterasu. Starting out from the Yamato palace in Sakurai, Yamatohime-no-mikoto wandered the region for twenty years before arriving at Ise, where she established the inner shrine dedicated to the Sun Goddess. The Hermit card represents a search for truth and wisdom, often as a solitary quest. Yamatohime-no-mikoto was the <i>saiō</i> (the High Priestess of the Ise Shrine) who never married. The card shows her as elderly and robed in the white and red clothing of the miko (shrine attendant). Despite the gender shift, this Japanese Figure represents the ultimate solitary quest.</p>
+                <br>
+                <img src="IMG/Default/1-Figure12.jpg" alt="Japanese Tarot Cards - Figure12">
+                <p align="center"><b>Figure 12:</b> Yamatohime-no-mikoto from the Kojiki(Isaki 2008)</p>
+                <br>
+                <p>There are some obvious or logical reasons for substituting figures on the European tarot. Two figures in particular—an ancient queen and a medieval wizard— often replace the High Priestess card and the Magician card, respectively. One of the more common and fascinating substitutions is the historical Figure of Himiko (170–248 CE) as the emblem for the High Priestess. Himiko was the ruler of the earliest Japanese state, described by Chinese ethnographers in accounts that note her effectiveness as a political leader and a shaman specialist. She was reported to have unified 100 chiefdoms and to have been adept at divination and magic. Himiko is presented in popular culture in various ways, including solemnly regal, calculatingly evil, and frivolously erotic (Miller 2014b). Tarot cards that feature her are some of the most beautiful, intriguing, and challenging. In his card for the High Priestess, the artist Yamamoto Naoki (2014, <b>Figure 13</b>) substitutes an image of a young Himiko in a provocative pose, with her bare legs exposed. Perhaps he hints at an inferred sexual power attributed to her because the idea of female power residing in religious and political acumen might not function well for a modern viewer.</p>
+                <br>
+                <img src="IMG/Default/1-Figure13.jpg" alt="Japanese Tarot Cards - Figure13">
+                <p align="center"><b>Figure 13:</b> Shaman Queen Himiko (Yamamoto 2014)</p>
+                <br>
+                <p>The association of Himiko with magical power and expertise is so great that many tarot readers and writers have adopted her name as their own. Himiko Rose (Himiko Rōzu 2013) created a pretty tarot deck with vaguely Asian-looking figures. For the Hanged Man card she depicted a winged fairy girl wearing lilac and long boots, hung upside down in web. Another well-known divination expert who uses the name Moon Princess Himiko has also produced tarot decks (Kasai and Moon Princess Himiko 2002, see Appendix 1).</p>
+                <br>
+                <p>Another common replacement is to use a legendary <i>onmyōji</i> (wizard, literally “yin yang master”) to represent the Magician card. The wizard named Abeno Seimei (921–1005) became a colossal hit among female fans after he was the romanticized subject of novels, manga, anime and film from the 1990s (Miller 2008). Seimei was an occasional member of a guild of wizards officially part of the imperial court structure. In the tarot designed by Itateyama Misuzu (2012, <b>Figure 14</b>), Seimei is a handsome young man holding a pentagram, a symbol often associated with him that also adorns the many shrines that are dedicated to him today. Here, this symbol has a separate history from its appearance in the West, and was b orrowed into Japan from China, where it represented the Taoist concept of the Five Elements in balance.</p>
+                <br>
+                <img src="IMG/Default/1-Figure14.jpg" alt="Japanese Tarot Cards - Figure14">
+                <p align="center"><b>Figure 14:</b> The wizard Abeno Seimei as the Magician card (Itateyama 2012)</p>
+                <br>
+                <p>What do we learn about contemporary Japan from surveying tarot cards? Perhaps we cannot divine the future, but we can see a wealth of cultural adaptation and a playfulness with figures and symbols that preserves messages typically associated with tarot but recasts them for an audience that is non-white, largely female, and highly attuned to visual messages. Clearly, the tarot is a go-between—an intermediary between two different philosophies or worldviews. We do not always find a smooth reconciliation of different cultural elements on the cards, and the imagery might occasionally leave us puzzled or uncomfortable. Nevertheless, the power of the card imagery to traverse different time periods, cultural settings, and complex WesternJapanese imagery is truly unique.</p>
+                <br>
+                <p>The use of established themes already circulating in Japanese mass culture, such as Dayan or Hello Kitty, brings the Japanese viewer into a visual relationship with foreign philosophical concepts. For example, in order to represent the concept of addiction to money, sex, food, and power, the European deck often portrayed a pair of humans chained to a huge satyr. The Devil card in Japan, however, might r epresent this idea instead as a type of unhealthy or hedonistic temptation, such as addictive cravings for food. In the Hello Kitty Devil card, Kitty-chan dreams of fattening pudding and donuts. In the deck by Kasai and Moon Princess Himiko (2002), a young man is furtively eating a pomegranate. Such substitutions gloss over the gaps between Christian and Japanese worldviews, allowing the tarot entry into different metaphysical cultures. In order to avoid a foreign pictorial paradigm that indexes Christian concepts such as resurrection, sin, and salvation, Japanese artists have shown impressive creative and imaginative engagement that melds existing tarot protocol with new elements and meanings. Using the currency of tarot, they c ontinue to exploit this divination medium to entertain, inform, and delight.</p>
+                <br>
+                <h3 class="title">Additional Files</h3>
+                <br>
+                <p>The additional files for this article can be found as follows:</p>
+                <ul>
+                	<li><b>Additional File 1: Appendix 1.</b> For additional examples of Japanese tarot cards (31 cards), please see Appendix 1: Supplementary Figures of Japanese Tarot Cards. https://doi.org/10.16995/ane.244.s1
+                	</li>
+                	<li><b>Additional File 2: Appendix 2.</b> In addition, questions for classroom discussion are found in Appendix 2: Ideas for Classroom Discussion Laura Miller and Jan Bardsley. https://doi.org/10.16995/ane.244.s2
+                	</li>
+                </ul>
+                <br>
+                <h3 class="title">Competing Interests</h3>
+                <br>
+                <p>The author has no competing interests to declare. </p>
+                <br>
+                <h3 class="title">Author Information</h3>
+                <br>
+                <p><b>Laura Miller</b> is Ei’ichi Shibusawa-Seigo Arai Endowed Professor of Japanese Studies and Professor of Anthropology at the University of Missouri-St. Louis. She has published more than 70 articles and book chapters on Japan and linguistic anthropology. She is the author of Beauty Up: Exploring Contemporary Japanese Body Aesthetics 26 (University of California Press, 2006). Currently, Miller is working on a book entitled <i>Diva Nation: Female Icons from Japanese Cultural History</i>, co-edited with Rebecca Copeland.</p>
+                <br>
+                <h3 class="title">Bibliography</h3>
+                <br>
+                <ul>
+                	<li><b>Akatsuka, F</b> 1975 Zenbu kirinuku hon: Kamizumō kara tarotto made 107 shu (Complete Papercutting Book: From Sumo Cutouts to Tarot Cards 107 Types). Tokyo: Shufu to Seikatsu-sha.
+                	</li>
+                	<li><b>Akatsuki, R</b> and <b>Takano, A</b> 2010 Kettei-han! Supirichuaru tarotto nyūmon (The Definitive Edition! A Spiritual Tarot Primer). Tokyo: Shufu no tomo.
+                	</li>
+                	<li><b>Bi, A</b> and <b>Umezawa, S</b> 2004 Anjeri no yasashii tarotto nyūmon: Tarotto kādo de uranau, asobu (Anjeri’s Simple Tarot Manual: Divination and Fun with Tarot Cards). Tokyo: Interwork.
+                	</li>
+                	<li><b>Clifford, J</b> 1988 The Predicament of Culture: Twentieth-Century Ethnography, Literature, and Art. Cambridge: Harvard University Press.
+                	</li>
+                	<li><b>Fukuda, R</b> 2003 Love Love Tarot. Seventeen Number 36, February. Magazine insert supplement.
+                	</li>
+                	<li><b>Gruzinski, S</b> 2002 The Mestizo Mind: The Intellectual Dynamics of Colonization and Globalization. Translated by Deke Dusinberre. New York: Routledge.
+                	</li>
+                	<li><b>Himiko, R</b> 2013 Za mirā tarotto (The Mirror Tarot). Tokyo: Jitsugyo no Nihonsha.
+                	</li>
+                	<li><b>Hoshi, S</b> and <b>Satō, Y</b> 2013 Aisare gāru no gaikotsu tarotto: Happī ōra o te ni ireru (The Loveable Girl’s Skeleton Tarot: A Happy Aura in Your Hands). Tokyo: Tōhōshuppan.
+                	</li>
+                	<li><b>Isaki, J</b> 2008 Kojiki tarotto kiso kaisetsu (Kojiki Tarot Basic Commentary). Tokyo: Murasaki-do.
+                	</li>
+                	<li><b>Itateyama, M</b> 2012 Wa tarotto (Japan Tarot). Tokyo: Azusa Shoin.
+                	</li>
+                	<li><b>Izumi, R</b> and <b>Kumagai, K</b> 2009 Pātikuru tarotto (Particle Tarot). Magazine insert supplement. Koiunreki, May, no. 96.
+                	</li>
+                	<li><b>Jitsugyo no Nihonsha</b> 2012 Otona no natta shōjo-tachi e My Birthday (For Girls Who Grew Up: My Birthday). Tokyo: Jitsugyo no Nihonsha.
+                	</li>
+                	<li><b>Kagami, R</b> 2007 Kirakira koi no tarotto uranai (Sparkling Love Tarot Divination). Tokyo: Futami shobō.
+                	</li>
+                	<li><b>Kagami, R</b> 2009 Harō kitei no tarotto urani (Hello Kitty Tarot Divination). Tokyo: Takedāndom House Japan.
+                	</li>
+                	<li><b>Kagami, R</b> and Ikeda, A 2005 Dayan no tarotto kādo (Dayan Tarot Cards). Tokyo: Hakusensha.
+                	</li>
+                	<li><b>Kasai, A</b> and <b>Himiko, M P</b> 2002 Ai to shinbi no tarotto uranai: Kasai Ayumi orijinaru kādo 78 mai (Love and Mystery Tarot Divination: 78 Original Cards by Kasai Ayumi). Tokyo: Seibidō Shuppan.
+                	</li>
+                	<li><b>Miller, L</b> 2008 Extreme Makeover for a Heian-Era Wizard. In: Lunning, F (Ed.) Mechademia: An Annual Forum for Anime, Manga and the Fan Arts. Issue #3: Limits of the Human. Minneapolis, MN: University of Minnesota Press, pp. 30–45. DOI: https://doi.org/10.1353/mec.0.0034
+                	</li>
+                	<li><b>Miller, L</b> 2010 (Spring) Japan’s Zoomorphic Urge. ASIANetwork Exchange, 17(2): 69–82. DOI: https://doi.org/10.16995/ane.208
+                	</li>
+                	<li><b>Miller, L</b> 2011 Tantalizing Tarot and Cute Cartomancy in Japan. Japanese Studies, 1(31): 73–91. DOI: https://doi.org/10.1080/10371397.2011.560659 Miller, L 2014a The Divination Arts in Girl Culture. In: Satsuki Kawano, S, Roberts, G S and Long, S (Eds.) Capturing Contemporary Japan: Differentiation and Uncertainty. Honolulu: University of Hawai’i Press, pp. 334–35. DOI: https://doi.org/10.21313/hawaii/9780824838683.003.0011
+                	</li>
+                	<li><b>Miller, L</b> 2014b “Rebranding Himiko, the Shaman Queen of Ancient History.” In: Lunning, F (Ed.) Mechademia, An Annual Forum for Anime, Manga and the Fan Arts: Issue #9: Origins. Minneapolis, MN: University of Minnesota Press, pp. 179–198. DOI: https://doi.org/10.1353/mec.2014.0015
+                	</li>
+                	<li><b>Mizuki, S</b> 2002 Mizuki Shigeru no sekai yōkai tarotto kādo (Mizuki Shiger’s Tarot Cards of From The World of Demons). Tokyo: Shueisha.
+                	</li>
+                	<li><b>Yamamoto, N</b> 2014 Nihon shinwa tarotto (Japanese Mythology Tarot). Selfpublished by the artist. Available at: https://yamamoto-naoki.stores.jp/ items/5375b73c236a1e6ec200002d (Accessed August 1, 2016).
+                	</li>
+                	<li><b>Yasokawa, K</b> 2014 Nihon mukashi banshi tarotto (Tarot of Japanese Fairytales). Osaka: Hatkei Artwork.
+                	</li>
+                </ul>
+                <br><br>
+                <h3 class="title"><u>Notes</u></h3>
+                <br>
+                <a name="Footnote1">1.</a> Detailed descriptions of tarot and other divination services and industries are found in Miller (2011, 2014a).
+                <br><br>
+                <a name="Footnote2">2.</a> Adam McLean’s website Art Tarot Project: Collection of Modern Tarot Decks lists 2,321 decks from around the world as of 2012. Online at http://www.alchemywebsite.com/tarot/tarot_collection.html Accessed August 1, 2016
+                <br><br>
+                <a name="Footnote3">3.</a> The ritual, religious, and spiritual aspects of tarot culture, as well as a discussion of attitudes about their efficacy or reliability, are found in Miller (2011).
+                <br><br>
+                <p><b>How to cite this article:</b> Miller, L 2017 Japanese Tarot Cards. ASIANetwork Exchange, 24(1), pp. 1–28, DOI: https://doi.org/10.16995/ane.244</p>
+                <br>
+                <p><b>Published:</b> 05 April 2017</p>
+                <br>
+                <p><b>Copyright:</b> © 2017 The Author(s). This is an open-access article distributed under the terms of the Creative Commons Attribution 4.0 International License (CC-BY 4.0), which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited. See http://creativecommons.org/licenses/by/4.0/.</p>
+                <br>
+                <p>ASIANetwork Exchange is a peer-reviewed open access journal published by Open Library of Humanities.</p>
+                <br><br><br>
+                <p><center><a href="#top-A1">"Jump to top of the Article"</a></center></p>
+                <br><br>
+              </div>
+            </div>
+          </article>
+        </div>
+        <!-- This Is The Second Article -->
+        <div id="article2" class="default-style">
+          <article>
+            <div class="box bg-2">
+              <div class="text-container">
+                <p class= Atransparent><a name="top-A1">Article 2</a></p>
+                <h2 class="main-title"><a name="top-A2">Tampa Tarot:</a>
+                <br>
+                An Experiment
+                <br>
+                in Community Storytelling</h2>
+                <br>
+                <h3 class="author">Stephanie Tripp</h3>
+                <br>
+                <p class="university">The University of Tampa</p>
+                <br>
+                <p class="abstract"><i>Tampa Tarot</i> combines web-based interactive storytelling and an Augmented Reality (AR) feature that displays virtual tarot cards on users’ smart phones in specific geographical locations throughout the city. The project attempts to answer the following question: In a world of diffuse and fragmented media, where old places and stories are displaced and obscured by layers of disconnected images and a growing, changing population, how do we understand who we are as a community? Emphasizing the intrinsically social and historical character of the tarot, the project employs the narrative structure of <i>cartomancy</i> (card reading) as a form of community storytelling.</p>
+                <hr>
+                <p class="abstract">Keywords: Tarot, Tampa, community, storytelling, narrative, news.</p>
+                <hr>
+                <p class="abstract">O projeto <i>Tampa Tarot</i> combina histórias interativas na Web e um recurso de Realidade Aumentada (RA) que mostra cartões virtuais de tarot nos smartphones dos utilizadores em localizações geográficas específicas por toda a cidade. O projeto tenta responder à seguinte pergunta: num mundo de meios de comunicação difusos e fragmentados, onde lugares e histórias antigas são deslocados e obscurecidos por camadas de imagens desconectadas e uma população em crescimento e mudança, como entendemos quem somos enquanto comunidade? Enfatizando o caráter intrinsecamente social e histórico do tarot, o projeto emprega a estrutura narrativa da <i>cartomancia</i> (leitura de cartas) como uma forma de contar estórias da comunidade.</p>
+                <hr>
+                <p class="abstract">PALAVRAS-CHAVE: Tarot, Tampa, comunidade, contar estórias, narrativa, notícias.</p>
+                <hr>
+                <p class="initialp">For years, business and civic leaders in my hometown of Tampa, Florida, have engaged in periodic bouts of hand-wringing over the city’s identity. As with local leaders in many cities, their anxieties center on economic development and manifest themselves during discussions of branding and tourism campaigns. As the city prepared to host the Republican National Convention in 2012, local boosters fretted that Tampa was too nondescript: “Florida’s metropolitan areas have well-established identities — Orlando for its theme parks and Miami for international flair. But, what is Tampa Bay’s identity?” (“Ad2 Event Recap”, 2012). While the trifling preoccupations of promotional campaigns may seem unlikely prompts for humanities research, something in that seemingly banal question resonated with greater significance, something that sparked my interest as a media scholar. I re-frame the question this way: In a world of diffuse and fragmented media, where old places and stories are displaced and obscured by layers of disconnected images and a growing, changing population, how do we understand who we are as a community? My response, at the risk of sounding glib, is to tell the city’s fortune. To do so, I have developed <i>Tampa Tarot</i>.</p>
+                <br>
+                <p><i>Tampa Tarot</i> is a community art project that on one level is a fun or interesting way to learn about the city’s history and culture, but on another is an experiment in alternative knowledge legitimation grounded in electronic social networking technologies. Starting from the concept of <i>psychogeography</i>, a term defined by French cultural theorist Guy Debord (1955) as “the study of the precise laws and specific effects of the geographical environment, consciously organized or not, on the emotions and behaviors of individuals,” <i>Tampa Tarot</i> attempts to evoke a community’s collective dream of its own identity and destiny. The project currently resides on testing servers, but once it launches people will be able to encounter <i>Tampa Tarot</i> through two interfaces: a website that describes the project and generates tarot card readings and an augmented reality (AR) application that displays virtual cards that I have designed in locations throughout the city. In addition, members of the community will be encouraged to participate in the project by producing their own tarot cards that offer complementary or contrasting community narratives.</p>
+                <br>
+                <img src="IMG/Default/2-Figure1.jpg" alt="Tampa Tarot - Figure1">
+                <p align="center"><b>Figure 1</b></p>
+                <br>
+                <p><i>Tampa Tarot</i> adopts many conventions of popular tarot decks and reading practices to make its interfaces as familiar and intuitive to users as possible. The web-based card-reading interface randomly deals a spread from a deck of seventy-eight cards composed of twenty-two “trump” cards known as the Major Arcana and four suits of fourteen cards each. The trumps take us through a journey of innocence, initiation, temptation, sin, and redemption, just as they do in traditional <span class="key" about="Tarot"> tarot </span> decks. The figures and events they depict have been modified to reflect Tampa’s people, history, and mythology, but their meanings are intended to coincide in spirit with other decks. The suits of Bolts, Doubloons, Estuary, and Swords in the <i>Tampa Tarot</i> correspond to those of Wands, Coins/Pentacles, Cups, and Swords featured in Waite-Smith and other popular decks<sup><a href="#Footnote1" class="footnote">1</a></sup>. Interactive readings are generated using the Celtic Cross spread, probably the most recognizable card-reading arrangement. The spread was popularized in the early twentieth century by Arthur Edward Waite, who described it as “the most suitable for obtaining an answer to a definite question.” Although many users no doubt will approach the reading as a tool for personal divination, instructions on the website encourage visitors to frame their questions around the entire Tampa community.</p>
+                <br>
+                <p>My work on this project began as a more playful exploration of how residents perceive their community identity in the age of networked electronic media, but its focus has shifted during the intervening years as the stakes for defining and sanctioning common knowledge have increased. With the rise of social media over the past decade, the effects of what Eli Pariser has described as “the filter bubble” (2011) have eroded our shared sense of community and, with it, a mutual understanding of the world around us that underpins our ability to make collective decisions. As Zeynep Tufekci notes,</p>
+                <br>
+                <p><q><small>Social media’s business model financed by ads paid out based on number of pageviews makes it not just possible but even financially lucrative to spread misinformation, propaganda, or distorted partisan content that can go viral in algorithmically entrenched echo chambers. (2017: 241)</q></small></p>
+                <br>
+                <p>We witness this phenomenon globally in the rejection of scientific consensus on climate change by the president of the United States, no less. But we see it also in our communities. An example from my community arose in June 2017 when a large number of residents rejected a sand renourishment plan to protect beach communities on Florida’s Gulf Coast from storm surge even though these renourishment programs have been implemented without controversy for decades to the great benefit of our barrier islands (Douglas, 2017). While many interpret the increasing lack of consensus regarding the most basic states of affairs as a problem that must be corrected <i>within</i> the paradigm of literacy—such as increasing the use of fact checkers, for example—these perspectives underestimate the extent to which our culture exists in a world no longer governed by the conventions of print culture.</p>
+                <br>
+                <p>Benedict Anderson (1983) has described the confluence of printing press, capitalism, and the nation state that emerged half a millennium ago to shape our modern world as “print capitalism.” In Imagined Communities, his seminal work on nationalism, he posits that, under print capitalism, thousands—even millions—of strangers could consider themselves “Brazilians” or “Germans” or “Japanese” or “Canadians” even to the point of sacrificing themselves, even though these entities really are contrivances, “imagined communities,” that forge common identities based around shared language and cultural practices. In a much-cited example, he writes of the silent newspaper reader who “is well aware that the ceremony he performs is being replicated by thousands (or millions) of others of whose existence he is confident, yet of whose identity he has not the slightest notion” (35). The power of that image to comprehend social cohesion is now belied by its belatedness. We have spent the past two decades in the twilight of print capitalism, and as we watch the more tangible elements of the apparatus give way we must consider what else will ebb with it.</p>
+                <br>
+                <p>The decline of newspapers and its attendant toll on accountability journalism has been chronicled by scholars for more than a decade<sup><a href="#Footnote2">2</a></sup>. The effects are manifest not only in the thousands of professional journalists thrown out of work but also in the physical structures of our cities, which were shaped largely by twentieth-century communications technologies. New York’s Rockefeller Center, whose modern towers have housed some of the most powerful media organizations of the last century—RCA, NBC, and the Associated Press—is an obvious example of the powerful influence of broadcast-model media on our urban landscapes. Although Rockefeller Center still stands, the locus of media power has shifted far west of midtown Manhattan to the sprawling office parks of Silicon Valley. Locally, the effects on our cities are more tangible as landmark buildings that once held the trappings of centralized media authority within a community—the gatekeepers, philanthropists, and sports franchise owners—have been repurposed or erased altogether. In my city, the downtown headquarters for The Tampa Tribune for more than forty years met the wrecking ball in early 2017. For several weeks during the spring, video of the demolition filled my social media feeds alongside the latest political outrages and the perpetual calls to end “fake news.” The choice riverfront lot will soon house luxury condominiums. I have marked the location with a virtual tarot card.</p>
+                <br>
+                <img src="IMG/Default/2-Figure2.jpg" alt="Tampa Tarot - Figure2">
+                <p align="center"><b>Figure 2</b></p>
+                <br>
+                <p>Yet to leave the Tarot there, as a farewell postcard to print capitalism, does not even vaguely satisfy. To respond to “What is Tampa Bay’s identity?” with “I have divined the future and it’s not that old newspaper plant anymore” will not suffice. Such as response does not get at that deeper, more urgent question of what the Tarot can teach us about who we are as a community. To accomplish that, it is necessary to understand the cultural history of tarot cards and how much of that history involved collective rather than individual practices of signification.</p>
+                <br>
+                <p>Contemporary industrialized culture understands the Tarot within the context of individual beliefs and concerns. Tarot card readings have been compared in popular culture and even in some scholarly work to Hermann Rorschach’s inkblot tests—in other words, as instances of individual psychological projection. For example, Paul Martin Lester’s <i>Visual Communication: Images with Messages</i>, groups Tarot cards, the I-Ching, astrology, and ink blots as examples of “projection,” which he describes as a type of mental activity that affects visual perception (Lester, 2011: 63-64). A quiz on the website of the Science Channel’s Oddities San Francisco series (2012-13) noted that some psychologists “might see tarot as a way of accessing a subject’s subconscious through that person’s free associations in reaction to images, much like a Rorschach test” (“Tarot Quiz”). Yet portrayals such as these miss the intrinsically social and historical character of the Tarot and its narrative structure. With origins tracing back to at least the late Middle Ages in Europe, the Tarot draws on powerful cultural narratives that often frame the subject of a reading within the bounds of social approbation or condemnation. Those narratives were most prominently depicted in the Triumphs, which were allegorical pageants enacted in cities throughout Europe. Triumph narratives, such as Petrarch’s Il Trionfi in the fourteenth century, followed the tradition of The <i>Psychomachia</i>, the story of the soul’s journey through life and death written in Spain in the fifth century CE (Thomson, 1930: 109-112). The pageant processionals contained a series of carts depicting a portion of the story, with later carts triumphing over or “trumping” the carts preceding them (Huson, 2004: 30-31). The Triumphs were prevalent in Renaissance popular culture, and illustrated versions appeared “on Marriage chests, tapestries, relief carvings, and other decorative arts” (Place, 2010: 17). Robert Place, a well-known Tarot scholar and artist, notes that these illustrations, however intricate they may appear to us today, were cultural commonplaces whose lessons for the observer would have been obvious. He states that, “Instead of coming from the text, these illustrations seem to be informed by the popular symbolism of the day, possibly from the depiction of these characters in actual parades. All of these images were popular at the time of its creation and were as easily recognized as Santa Claus or Uncle Sam is now” (2010: 17). Tarot cards themselves appear to have been quite popular in Renaissance Europe, and, although surviving examples are mostly from hand-painted decks commissioned by wealthy patrons and treated as <i>objets d’art</i>, numerous inexpensive decks were produced from woodcuts and engravings (9). Thus, the meanings of tarot cards were commonly understood, and the stories that emerged from card readings would have been situated within knowledge of everyday actions and values of the community.</p>
+                <br>
+                <p>If we are, indeed, entering an era in which our understanding of facts is no longer rooted in a sense of sharing the day’s accounts with thousands of other newspaper readers or television viewers, then exploring the Tarot may provide insight into what may comprise our new imagined communities. The <i>Tampa Tarot</i> project will allow me to test that hypothesis. Can a set of seventy-eight local cards sorted on a website and arrayed virtually around the city approximate a shared cultural experience or a point of common understanding? Can they do any more than amuse us, or perhaps teach us a little local history? Those answers have yet to be divined. In the meantime, I will conclude with one final image.</p>
+                <br>
+                <p>On a street corner in Central Tampa near where the construction of an interstate decimated a vibrant African-American community forty years ago, stands the Three of Swords. Known to many tarot enthusiasts as the Sorrow card, it is depicted in the Waite-Smith deck as a heart pierced by three swords, and it portends deep sadness and painful truths. In the <i>Tampa Tarot</i> version, the three swords plunge into a palmetto thicket outside of Fort Brooke, the U.S. military outpost established during the Seminole Indian Wars and around which the city grew. That old fort stands for many things, but in this case, it stands for insides and outsides, and for enforcing what goes where, in much the same way that the construction of highways does. In 1967, a Tampa police officer shot a young black man named Martin Chambers in the back because he suspected him of robbing a pawn shop in the Central Avenue district. Days of riots followed. Scores of businesses along Central Avenue were burned and looted, and within a few years the interstate came through and finished off what was left. An investigation soon after Chambers’ death ruled that the police shooting was justified, a decision that bitterly divided the city and continues to resonate five decades later. Subsequent attempts to hold police accountable for the shooting, including an official request by the City of Tampa as recent as 2008, have been unsuccessful (Guzzo, 2017; Hutcheson, 2007; Morrow, 2017). That is the story of my city’s sorrow. A few years ago, the city dedicated a portion of a park to commemorate Central Avenue. Near its entrance resides my own commemoration, the augmented reality Three of Sorrows, speaking its painful truth.</p>
+                <br>
+                <img src="IMG/Default/2-Figure3.jpg" alt="Tampa Tarot - Figure3">
+                <p align="center"><b>Figure 3</b></p>
+                <br><br>
+                <h3 class="title">REFERENCES</h3>
+                <ul>
+                	<li>
+                		“Ad 2 Event Recap: Branding Tampa Bay” (2012). Ad 2 Tampa Bay, 20 July 2012, www.ad2tampabay.org. 30 March 2016.
+                	</li>
+                	<li>
+                		ANDERSON, Benedict (1983). Imagined Communities: Reflections on the Origin and Spread of Nationalism. Rev. ed. London: Verso.
+                	</li>
+                		DEBORD, Guy (1955). “Introduction to a Critique of Urban Geography.” Les Lèvres Nues 6 (1955). Translated by Ken Knabb. Situationist International Online, www.cddc.vt.edu/sionline/presitu/geography.html .
+                	</li>
+                	<li>
+                		DOUGLAS, Mark (2017). “You Paid for It: Property Owners Draw Line in the Sand Against Beach Renourishment Project.” WFLA Channel 8, 23 June 2017, www.wfla.com. 30 June 2017.
+                	</li>
+                	<li>
+                		GUZZO, Paul (2017). “Racism in Tampa Boiled Over 50 Years Ago into Central Avenue Riots.” Tampa Bay Times, 7 June 2017, www.tampabay.com/news/humaninterest/racism-in-tampa-boiled-over-50years-ago-into-central-avenue-riots/2326360.
+                	</li>
+                	<li>
+                		HENRY, Neil (2007). American Carnival: Journalism under Siege in the Age of New Media. 1st ed. Berkeley: University of California Press.
+                	</li>
+                		HUSON, Paul (2004). Mystical Origins of the Tarot: From Ancient Roots to Modern Usage. Rochester, VT: Destiny Books.
+                	</li>
+                	<li>
+                		HUTCHESON, Nicole (2007). “Tampa Requests Review of Shooting.” St. Petersburg Times, 3 Aug. 2007, www.sptimes.com/2007/08/03/Hillsborough/Tampa_requests_review.shtml.
+                	</li>
+                	<li>
+                		JONES, Alex S. (2009). Losing the News: The Future of the News that Feeds Democracies. Oxford and New York: Oxford University Press.
+                	</li>
+                	<li>
+                		LESTER, Paul Martin (2011). Visual Communication: Images with Messages. 5th ed. Boston: Wadsworth-Cengage.
+                	</li>
+                	<li>
+                		MADIGAN, Charles M., ed. (2007). -30-: The Collapse of the Great American Newspaper. Chicago: Ivan R. Dee.
+                	</li>
+                	<li>
+                		MORROW, Emerald (2017). “Filmmaker Marks 50th Anniversary of Tampa Race Riots with New Documentary.” WTSP 10 News, 7 June 2017, www.wtsp.com/article/news/history/filmmaker-marks50th-anniversary-of-tampa-race-riots-with-new-documentary/67-446480689 .
+                	</li>
+                	<li>
+                		PARISER, Eli (2011). The Filter Bubble: What the Internet Is Hiding from You. New York: Penguin Press.
+                	</li>
+                	<li>
+                		PLACE, Robert M. (2010). The Fool’s Journey: The History, Art, & Symbolism of the Tarot. Saugerties, NY: Talarius Publications.
+                	</li>
+                	<li>
+                		“Tarot Quiz” (2012). Oddities San Francisco, science.discovery.com/quizzes/tarot/tarot.html. 15 Sept. 2012.
+                	</li>
+                	<li>
+                		THOMSON, H. J. (1930). “The Psychomachia of Prudentius.” The Classical Review 44.3: 109–112. www.jstor.org/stable/698302.
+                	</li>
+                	<li>
+                		TUFECKI, Zeynep (2017). Twitter and Tear Gas: The Power and Fragility of Networked Protest. New Haven, CT, and London: Yale University Press.
+                	</li>
+                	<li>
+                		WAITE, Arthur Edward (1911). The Pictorial Key to the Tarot: Being Fragments of a Secret Tradition under the Veil of Divination. London: W. Rider. Kindle ed.
+                	</li>
+                	<li>
+                		WAITE, Arthur Edward, and Pamela Colman Smith (1910). The Rider Tarot Deck. London: William Rider & Son.
+                </ul>
+                <br><br>
+                <h3 class="title"><u>Notes</u></h3>
+                <br>
+                <p><a name="Footnote1">1.</a> Known also as the Rider-Waite deck, this set of cards was drawn by Smith based on instructions provided by Waite, a scholar and mystic. In recent years, the Waite-Smith name has grown more prevalent as scholars have sought to more fully recognize Smith’s role in the work</p>
+                <br><br>
+                <p><a name="Footnote2">2.</a> See Henry, 2007; Jones, 2009; and Madigan, 2007</p>
+                <br><br>
+                <p align="center"><cite>© 2018 Stephanie Tripp.<br>Licensed under the Creative Commons Attribution-Noncommercial-No Derivative Works 4.0 International<br>(CC BY-NC-ND 4.0).</cite></p>
+                <br><br><br>
+                <p><center><a href="#top-A2">"Jump to top of the Article"</a></center></p>
+                <br><br>
+              </div>
+            </div>
+          </article>
+        </div>
+        <!-- here is the third Article -->
+        <div id="article3" class="default-style">
+          <article class="mytext">
+            <div class="box bg-3">
+              <div class="text-container">
+                <p class= Atransparent><a name="top-A1">Article 3</a></p>
+                <h2 class="main-title"><a name="top-A3">Tarot in Blood Meridian</a></h2>
+                <h3 class="author">Associate Editor: Sophie Campos</h3>
+        	      <p class="author">Faculty Reviewer: Nancy Metz</p>
+        	      <p class="author">Author: Demetria Lee</h3>
+        	      <p class="university">Humboldt-Universität zu Berlin</p>
+                <p>Cormac McCarthy’s Blood Meridian tracks a young man known only as “the kid” through the lawless US-Mexico borderlands in the mid-1800s. The kid, either seeking adventure or seeking pure violence, joined a gang of scalp hunters known as the Glanton gang. Among this brutal coterie were John Glanton, Captain White, Toadvine, two men both named John Jackson, Tobin, the ex-priest, and Judge Holden. The judge, an enormous, hairless man, was a polyglot, a draftsman, a man of incredible knowledge among the uneducated villains. He reproduced everything he saw in a sketchbook before promptly destroying the very thing he drew—be it plant, stone, or animal. The judge practiced a sort of devout nihilism into which he tried to fold the resisting kid. The Tarot cards referred to in the novel allowed the reader to glean meaning from the story, just as the cards allow diviners to glean meaning from the real world. The cards that I will be exploring are the Fool, the Four of Cups, the Chariot, the High Priestess, the Four of Wands, the Hanged Man, the Devil, the Hermit, the Hierophant, Judgment, and Death. While the judge’s philosophy was laid out in his monologues, the taciturn kid’s beliefs must be read through the cards. In applying the symbols of the cards, I propose a reading of the novel in which the judge evangelized a dehumanizing dogma of nihilism while the kid holds out for a more positive philosophy that will give his life meaning.</p>
+                <h3  class="title">THE ANATOMY OF THE DECK</h3>
+                <p class="initialp">There are 78 Tarot cards: 56 Minor Arcana, 22 Major. Diviners arranged the cards face-down called a spread; each placement represented a different aspect of the question. Perhaps one asked the mystic about one’s love life. The diviner, then, arranges the cards and flips them over in a predetermined order. The first might represent the person in question; the second, the person in question’s immediate future, distant future, distant past, and so on. Different cards yield different meanings, some of which I will go through individually. The Minor Arcana are in four suits: cups, pentacles, swords, and wands. Cups generally represent emotion and relationships; pentacles, material, possessions, swords, intellect and rationality; wands, energy and spirituality. Elementally, cups correspond with water, pentacles with earth, swords with air, and wands with fire. For each suit of the Minor Arcana, there is a page, a knight, a king, a queen, an ace, and numbers two through ten (e.g. the King of Cups, the nine of Swords). The Major Arcana are grand symbols such as the Tower of Destruction and the Moon. For divination purposes, each card has a different meaning, and when the card is inverted (drawn upside-down), this meaning changes—usually to something negative. In a Tarot reading, one might ask a single question, draw a card (or several), interpret it, and, if its meaning is obscure, the person in question might, then, draw another clarifying card.</p>
+                <p>I will include pictures from the Waite-Smith Tarot deck. Although this deck was published after the novel’s setting, it has been very influential on modern interpretations of the Tarot. I will provide a picture of each card, give an explanation of its meaning, and describe its appearance in the text.</p>
+                <br><br>
+                <h3 class="title">THE CARDS THEMSELVES</h3>
+                <br>
+                <h4 class="tcard-title">The Fool</h4>
+                <p>The Fool is looking not at the cliff falling off directly in front of him, but off into the sky. His dog nips at his heels, some say in warning (Nichols, 24). The Fool acts by intuition rather than rationality: “The Fool’s spontaneous approach to life combines wisdom, madness, and folly. When he mixes these ingredients in the right proportions, the results are miraculous, but when the mixture curdles, everything ends up in a sticky mess” (Nichols, 24). When reversed, the Fool is interpreted to mean that the drawer is either too cautious or too reckless (Greer, 41).</p>
+                <br>
+                <img src="IMG/Default/3-Figure1.jpg" alt="Tarot in Blood Meridian - Figure1">
+                <p align="center"><b>Figure 1:</b> The Fool Card</p>
+                <br>
+                <p>While on their trek through the desert in search of scalps, the Glanton gang was briefly joined by a family of circus performers. While camping together, the matriarch reads her Tarot cards to tell the fortunes of the gang. Jackson, the first man to draw, picked this card which “bore the picture of a fool in harlequin and a cat” and was called “el tonto” (McCarthy, 97). Readers are not told what exactly the woman begins to chant, but the judge interprets her as saying: “in your fortune lie our fortunes all” (97).</p>
+                <br>
+                <h4 class="tcard-title">The Four of Cups</h4>
+                <p>The Four of Cups suggests a “divided heart” and is “generally associated with mercy” (Sepich, 107). This comes from the Kabbalistic interpretation of the Tarot which connects fours of all suits with ‘chesed,’ which translates to ‘mercy’ (Sepich, 106).</p>
+                <br>
+                <img src="IMG/Default/3-Figure2.jpg" alt="Tarot in Blood Meridian - Figure2">
+                <p align="center"><b>Figure 2:</b> The Four of Cups Card</p>
+                <br>
+                <p>In the Waite-Smith illustration, viewers are shown a man sitting meditatively under a tree ignoring the gift of an additional cup. One interpretation is the man was being tempted by this offering. Often, he is interpreted as ignoring the gifts of the world and taking them for granted (Greer, 124). This card is also associated with daydreaming on things that are not there yet ignoring that which is (Greer, 124). Inverted, this card represents a “lack of devotion” (Bradford, 21). It also represents boredom, restlessness, and a need to move on (Greer, 125).</p>
+                <p>The Four of Cups is the only card in the novel that appeared twice. The first time was when the kid and Sproule encountered an empty, burned village,  PHILOLOGIA  just before they discovered the heap of corpses in the local church. In one house, they found: “Illustrations cut from an old journal and pasted to the wall, a small picture of a queen, a gypsy card that was the four of cups” (McCarthy, 63). At the reading, the kid drew the Four of Cups: “He’d not seen such cards before, yet the one he held seemed familiar to him. He turned it upside down and regarded it and he turned it back” (McCarthy, 97). The Four of Cups is also the first explicitly inverted card in the novel.</p>
+                <br>
+                <h4 class="tcard-title">The Chariot</h4>
+                <p>The Chariot was the novel’s second inverted card. The Chariot referred not to the driver, but to the vehicle that bore him. The prevailing interpretation is fate or the power of the human will. It is also associated with hubris (Nichols, 145). Inverted, the Chariot illustrated recklessness, the lack of self-control, surges of power, and disregard for the effects of your pursuits on others (Greer, 58).</p>
+                <br>
+                <img src="IMG/Default/3-Figure3.jpg" alt="Tarot in Blood Meridian - Figure3">
+                <p align="center"><b>Figure 3:</b> The Chariot Card</p>
+                <br>
+                <p>After Glanton, the leader of the gang, draws the Chariot, the beldam began chanting. The chanting angered Glanton so much that he drew out his gun. Glanton’s anger was illustrative of the rashness represented in the card. “La carroza, la carroza, cried the beldam. Invertido. Carta de Guerra, de venganza. La vi sin ruedas sobre un rio obscuro…” (McCarthy, 100). This quote was a clear representation of the Chariot inverted: it has no wheels, no way of controlling it. “Wheel” may also refer to another card, the Wheel of Fortune, which does not represent luck so much as it does with fate (Greer, 64). Not even fate guides the wild journey of the Glanton gang.</p>
+                <br>
+                <h4 class="tcard-title">The Devil</h4>
+                <p>The judge was a devil-like character—a brilliant dancer, fiddler, a powerful being and tempter. The Devil, of course, was a figure that was not specific to Tarot. Later in the paper, I will discuss the judge and the Devil in more detail, but here I will merely outline what the Devil represents in the cards. The Devil represented lies, fear, cruel use of power, domination, and addiction (Greer, 77). The “shadow” aspects are on display in the Devil—these are parts of oneself that one does not wish to associate with or even confront (Greer, 78).</p>
+                <br>
+                <img src="IMG/Default/3-Figure4.jpg" alt="Tarot in Blood Meridian - Figure4">
+                <p align="center"><b>Figure 4:</b> The Devil Card</p>
+                <br>
+                <h4 class="tcard-title">The Hermit</h4>
+                <p>The kid met a hermit early on in the novel. The man was kind enough, opening up his home to the kid, but, ultimately, he was revealed as a deviant: he proudly owned a black, shriveled human heart and the kid woke up in the middle of the night to the disheveled man bowed over him.</p>
+                <br>
+                <img src="IMG/Default/3-Figure5.jpg" alt="Tarot in Blood Meridian - Figure5">
+                <p align="center"><b>Figure 5:</b> The Hermit Card</p>
+                <br>
+                <p>The Hermit lived by his lamp, the golden thing that he had discovered. He was a solitary figure, unlike the Hierophant, and so subverts establishment spirituality:
+                <q>His lamp seems an apt symbol for the individual insight of the mystic. Whereas the Pope’s chief emphasis lies in religious experience under conditions prescribed by the Church, the Hermit offers us the possibility of individual illumination as a universal human potential, an experience not confined to canonized saints. (Nichols, 166)</q>
+                <p>The Hermit could represent the spiritual pining that many people go through in life—looking for wisdom greater than themselves in others (Nichols, 168).</p>
+                <br>
+                <h4 class="tcard-title">Judgment</h4>
+                <p>This is a card with religious imagery. An angel blew his trumpet and the dead risen from their graves, an illustration of the Bible’s account of Judgment day: 1 Thessalonians 4:16: “For the Lord himself, with a cry of command, with the archangel’s call and with the sound of God’s trumpet, will descend from heaven, and the dead in Christ will rise first.” Compare also to Revelation 20:13: “Death and Hades gave up the dead that were in them, and all were judged according to what they had done.”</p>
+                <br>
+                <img src="IMG/Default/3-Figure6.jpg" alt="Tarot in Blood Meridian - Figure6">
+                <p align="center"><b>Figure 6:</b> Judgment Card</p>
+                <br>
+                <p>In <span class="key" about="Tarot"> Tarot </span>, Judgment could represent the crossroads at which great transformations were necessary (Greer, 90). Additionally: “when projected onto others, you may see them as trying to influence people through the force of their personality or propaganda” (Greer, 92). The judge certainly has a powerful personality, and he aimed to influence what he judges (perhaps those things he writes in his book), through destruction or otherwise.</p>
+                <br><br>
+                <h3 class="title">THE KID AND THE FOUR CUPS:<br>DIVIDED HEART AND FALSE PROPHETS</h3>
+                <p class="initialp">Readers felt sorry for the kid the moment readers were introduced to him. His dad was a drunk, his mother was dead, and he seemed sort of neglected, wearing his “thin and ragged linen shirt” (McCarthy, 3). He ran away and readers were not surprised, although his thoughts were rarely made known. The judge and Tobin had long monologues in which the kid responded with little more than “I know” and “Yeah.” However, his drawing of the Four of Cups and the way that it “seemed familiar to him” (McCarthy, 99) gave readers some insight (which I will shortly explain by analyzing the meaning of the card) into his heart beyond which readers were explicitly told about him.</p>
+                <p>The Four of Cups could be associated with mercy, a divided heart (Sepich, 107), or even a “lack of devotion” (Greer, 21). The kid, after he ran away, looked for a surrogate family, something to fill the lack of nurture he received from his own family. He found a Hermit, Captain White, and Glanton and his gang, all while avoiding the judge. His desire to find something greater than himself to cling to divided his heart between the pursuit of belonging and the judge’s spiritual nihilism.</p>
+                <p>At the outset of the novel, the kid encountered the hermit: “Solitary, half mad, his eyes redrimmed as if locked in their cages with hot wires. But a ponderable body for that” (McCarthy, 17). The hermit gave the kid a place to sleep for the night, water to drink and a fire to sit by. Despite his “ponderable body”—the acuity that readers are led to believe the hermit might possess—readers were soon shown that solitude does not produce a person that one aspires to be nor one with something valuable to teach others. When the kid asked where he could get some water, the hermit told him to follow the path outside. The kid protested that it is too dark, but the hermit rebutted: “It’s a deep path. Foller ye feet. Foller ye mule. I caint go” (McCarthy, 17). The kid, embodying elements of the Fool on his journey, was encouraged to follow his intuition and his animal instinct, but the Hermit was no such character. He clung to the shelter that he had managed to establish. The Hermit shrugged off the wise-old-man archetype and admitted to certain limitations despite having the wisdom of survival. The novel’s hermit kept a blackened human heart with him in his home, which showed readers just how removed from the rest of the world one can become when one chooses a cloistered life—the closest he came to human understanding was the feeling of a dried heart in his palm. In the night that he spent in the hermit’s cave, the kid “woke sometime in the night with the hut in almost total darkness and the hermit bent over him and all but in his bed” (McCarthy, 21). Hermits and monks have a sort of wisdom attached to them—many people seek them out for spiritual guidance. This hermit is no such source.</p>
+                <p>Captain White is the kid’s next false leader. White has had previous followers with almost cult-like zeal, such as the man who recruited the kid, telling him: “If I’d not run up on Captain White I don’t know where I’d be this day. I was a sorrier sight even than what you are and he come along and raised me up like Lazarus. Set my feet on the path of righteousness” (McCarthy, 32). The man was comparing Captain White to a sort of powerful religious figure―exactly the sort that gained an undeserved following. It does not take long for the kid to realize that he has walked with yet another false prophet. After a battle between the Native American army and Captain White’s battalion, the kid sees Captain White’s head in a jar. The kid remarked, “Somebody ought to have pickled [White’s head] a long time ago. By rights they ought to pickle mine. For ever takin up with such a fool” (McCarthy, 74). In hindsight, the kid recognized the hollowness of White’s command. He specifically used the word “fool,” which occurs frequently within the novel and was interpreted as many instantiations of the Fool card in Tarot. This particular use likely referred to the Fool’s recklessness and his ignorance of the path ahead, emphasized by Captain White’s willingness to lead others to their deaths.</p>
+                <p>The taciturn kid does not seem particularly moved by John Glanton. It was the kid’s ally Toadvine who put them in Glanton’s service. It was not out of reverence for the man, but out of a desire to avoid prison. There were no tender moments between Glanton and the kid. However, in a conversation with the judge, the kid defended his former leader. In their last conversation as members of the Glanton gang, the judge asks the kid: “Do you think Glanton was a fool? Dont you know he’d have killed you?” (McCarthy 319). Here the Fool reappeared, again compared to perceived leaders. The judge’s question seemed to imply that Glanton was not a fool. Perhaps the judge’s question was meant to show the kid that Glanton was ignorant to the danger of their trade and the recklessness with which their inverted chariot rode. The kid defended the man saying: “He never took part in your craziness” (McCarthy, 320). It seems that the kid wanted to remember his leader well, but the judge rightly revealed Glanton to be another false one. Within the Glanton gang, the kid also looked to Tobin the ex-priest for guidance. When the judge turned on the kid and Tobin, they joined forces to escape from the judge. At one point, Tobin told the kid to go on without him, but the kid refused to abandon the ex-priest. Tobin apparently had no qualms about abandoning the kid, which the latter learned when he woke up in a jail cell alone. The judge, sitting on the other side of the bars, asked him this: “What joins men together, he said, is not the sharing of bread but the sharing of enemies. But if I was your enemy with whom would you have shared me? With whom? The priest? Where is he now?” (McCarthy, 319). Damningly, the judge pointed out Tobin’s desertion, but not before making reference to the fact that the kid desired someone to align with. The judge suggested that the kid would not make enemies without allies and that even alliances come from animosities.</p>
+                <p>In the aftermath of the Glanton gang dispersal, the kid wandered alone for 29 years. It was in this time that readers saw his last attempt to find someone to connect with—an elderly hispanic woman who was, like the kid, completely alone. It was a surprisingly sentimental scene for one so reserved: <q>He made his way among the corpses and stood before her. [The lone woman] was very old and her face was gray and leathery and sand had collected in the folds of her clothing. She did not look up. The shawl that covered her head was much faded of its color yet it bore like a patent woven into the fabric the figures of stars and quartermoons and other insignia of a provenance unknown to him. He spoke to her in a low voice he told her that he was an American and that he was a long way from the country of his birth and that he had no family and that he had traveled much and seen many things and had been at war and endured hardships. He told her that he would convey her to a safe place, some party of her country people who would welcome her and that she should join them for he could not leave her in this place or she would surely die. (McCarthy 328)</q></p>
+                <p>Not only did the kid, in a seemingly uncharacteristic act of charity, tried to help the old woman, he told her that he would take her to be with her people. He admitted to her that he was not even close to his country in which he had no family. The moment he found another lone person, he immediately bonded with them, looking desperately for a human connection in this world. Most tellingly, reader were told his exact words to her: “Abuelita, he said. No puedes escucharme?” (McCarthy, 328). The kid has added a diminutive to the Spanish word for grandmother: “Abuela.” He was using the informal “tu” with her. This type of language would only be appropriate if one were talking to one’s own grandmother. Calling her “Grandmother,” might have evoked the drama of encountering Mother Earth, but instead, it more closely resembles calling one’s middle-school teacher “Mom” by accident or referring to a stranger as “Gramm-Gramm.” This scene demonstrates the kid’s desperation to find someone in this world to connect to. Yet, human connection has once again been pulled from under him when the woman turned out to be a corpse: “She was just a dried shell and she had been dead in that place for years” (McCarthy, 328).</p>
+                <br>
+                <h3 class="title">THE JUDGE’S SPIRITUAL NIHILISM<br>AND<br>THE KID AS HERETIC</h3>
+                <br>
+                <p class="initialp">If the kid was so lonely, why doesn’t he turn to the judge? The judge seemed to have some fixation on him. The judge tempted the kid with payment for his pistol like the Devil in the desert; he visited him in jail; and he finally enfolded him in some awful embrace. The judge also seemed to understand the kid’s yearning, telling him: “Don’t look away. We are not speaking in mysteries. You of all men are no stranger to that feeling, the emptiness and the despair. It is that which we take arms against, is it not?” (McCarthy, 343). While the judge was taking arms, the kid was looking for someone to follow. It was in part this apparent lack of mystery that the kid rebelled against. The judge espoused this sort of positive nihilism—rather than there not being anything, there is nothing. In the same way that one might criticize the watchmaker argument and other theories of intelligent design for showing a lack of faith in the power of randomness and void, so did the judge insists that believing in nothing was different than not believing in anything. Unprovoked, he told the Glanton gang at fire one evening: “Your heart’s desire is to be told some mystery. The mystery is that there is no mystery” (McCarthy, 263). The shocking revelation of the judge’s world was not that there was some great unseen power, but that insufficient power has been attributed to what was seen. Another spiritual statement by the judge came from his speech on the nobility of war: “War is the ultimate game because war is at last a forcing of the unity of existence. War is god” (McCarthy, 261). The judge, like the kid, saw divinity in the “unity of existence.” The kid searched for a place to belong while the judge surveyed land to conquer—both set out with the intention of discovering some sort of harmony. The judge’s evidence was the word of god, delivered through: “stones and trees, the bones of things” (McCarthy, 123). Perhaps these bones include the skull of the novel’s epigraph—the scalped head of a hominid. The judge seemed aware of this or other evidence for ancient violence, as he ominously put it: “War was always here. Before man was, war waited for him. The ultimate trade awaiting its ultimate practitioner” (McCarthy, 259). “War gods” had been replaced in the west by “personal saviors,” so this notion might be unattractive to readers: all one has was what one can observe and one’s inescapable observation was that one was part of an enduringly violent species. The kid, readers know, was inclined towards mindless violence; yet he repeatedly rejected the judge and the judge found himself wanting.</p>
+                <p>The judge accused the kid of not being fully committed to the Glanton gang, an accusation wellillustrated by analyzing the judge as Tarot’s Judgment and the kid as the Four of Cups. The judge told the kid that there was a “flawed place in the fabric of [his] heart” (McCarthy, 312), which was reminiscent of the “divided heart” sentiment of the Four of Cups. The judge went on to call the kid “mutinous” and claimed that: “You alone reserved in your soul some corner of clemency for the heathen” (McCarthy, 312). “Clemency” is “mercy [or] leniency” especially as it is “shown in the exercise of authority or power” (OED). The kid had some amount of power, which might amount to no more than his free will: his ability to choose not to shoot the judge, to help a man dig an arrow out of his leg, and even to hold back a part of himself and not fully participate in the exploits of the Glanton gang. The kid’s actions were in keeping with the judge’s own vision of himself as suzerain. The kid was able to maintain some amount of autonomy under the judge, who, acting as suzerain: “rules even when there are other rulers. His authority countermands local judgments” (McCarthy 207). However, by showing “clemency for the heathen,” the kid’s belief in mercy went against the religious order established in the judge’s kingdom. As in many civilizations, this subversion of religious principles resulted in the persecution of the kept by the keeper. It might seem as though “heathen” refers to the Native Americans, as they were frequently referred to as such. However, it is clear that two major tenets of the judge’s religious understanding were: there was no great mystery, and war was god. The kid himself was the heathen, and he has clemency for the part of his divided heart that continued to yearn for that mystery greater than himself and a sense of belonging. When the judge visited the kid in prison, he said to the kid: “it was required of no man to give more than he possessed nor was any man’s share compared to another’s only each was called upon to empty out his heart into the common and one did not” (McCarthy, 319). The kid did not give everything over to the Glanton gang because he was looking for a group to belong to, not the judge’s devotion to war as an observable fact of life.</p>
+                <br>
+                <h3 class="title">THE JUDGE AS JUDGMENT:<br>RELIGIOUS IMAGERY IN HIS BATTLE<br>WITH MERCY</h3>
+                <br>
+                <p class="initialp">The Tarot’s Judgment depicted a scene from Revelation in which the dead were resurrected by the blowing of the archangel’s trumpet. This card was often seen to represent triumph over death and higher consciousness (Place, 211), the former of which might explain why the narrator told readers thrice at the close of the novel that the judge “says that he will never die” (McCarthy, 348). Judgment and Judgment Day were repeatedly referred to in the Book of Revelation. The judge’s book in which he attempted to record things before destroying them reminded one of the book of life by which humanity will be judged: <q>And the sea gave up the dead that were in it, Death and Hades gave up the dead that were in them, and all were judged according to what they had done. Then Death and Hades were thrown into the lake of fire. This was the second death, the lake of fire; and anyone whose name was not found written in the book of life was thrown into the lake of fire. Revelation 20:13-15</q></p>
+                <p>The Judgment card of the Tarot depicted this moment of resurrection and triumph over death, but readers knew that soon after, judgment would be cast, and those whom the judge has not approved for autonomy would be killed. The judge’s favorite game was also present in the New Testament’s final book: “war broke out in heaven; Michael and his angels fought against the dragon” (Revelation 7:7). The dragon (the Devil) lost this war and was sent to earth. After a stint on earth, he himself was sent to the lake of fire with “the false prophet” (Revelation 20:10), reemphasizing the presence of fraudulent and hollowed sources of meaning and malevolent deceivers. The judgment that the judge put onto the kid was also present in this apocalyptic book. In one of the letters of Revelation that the narrator was given to send to the 12 churches, it was written: “because you are lukewarm, and neither cold nor hot, I am about to spit you out of my mouth” (Revelation 3:16). In this same way, the judge deemed the kid “lukewarm” —the kid is “not partisan” (McCarthy, 312). The judge attempted to evangelize to the kid of the divinity of war, but the kid clung to something more beautiful and finished the novel “against [the judge’s] immense and terrible flesh” (McCarthy, 347). The judge judged other people as well. When recording things in his book, the judge did not worry if people refused to be put into it, saying: “Whether in my book or not, every man is tabernacle in every other and he in exchange and so on in an endless complexity of being and witness to the uttermost edge of the world” (McCarthy, 147). The judge knew enough about humanity to account for everyone, to judge everyone, and he thinks little of most people. His low opinion on humanity mirrored the way in which perpetrators of heinous violence often dehumanize the groups against which they acted. In order to frame this with Tarot, I will compare this to Judge Holden’s role as the Fool.</p>
+                <br>
+                <h3 class="title">SCIENCE AND VIOLENCE:<br>THE DEHUMANIZATION OF THE FOOL</h3>
+                <br>
+                <p class="initialp">The Fool was often pictured with a dog or some other small pet at his heels; in Blood Meridian, the Fool in the card was accompanied by a cat. Some scholars compared the Fool’s relationship with his dog to a king’s relationship with his fool (Nichols, 24). The Fool has a wide range of characteristics—he could be seen as very wise in his lack of prejudice, or stupid and reckless in his blind pursuits. Thus, it was not difficult to imagine that the interchangeability of the roles of king, fool, and dog. In her article arguing that the judge best embodies the Fool, Stinson argued that the judge’s dual role as the fool and the king fulfilled his role as suzerain—ruler among and above other rulers (Stinson, 14). The judge ruled over the Glanton gang even while Glanton was the captain. For example, Glanton has great talent taming animals, but although he could make a mean dog follow him and he responded to the title of “jefe,” readers knew that the judge ultimately had the upper hand on Glanton due to their “secret commerce” and their “terrible covenant” (McCarthy, 132).</p>
+                <p>Instead of owning a dog, the judge owned a person. When the gang met a man who travelled with his mentally challenged twin brother, James Robert, the judge adopted James Robert and, as Stinson argued, James Robert assumed the role of the Fool’s dog (Stinson, 14). James Robert was mostly referred to as the imbecile and the idiot in readers’ earliest interactions with him, but was called a fool more often as the novel progresses. Keeping a man as a pet is a dehumanizing act. Towards the end of the novel, the gang takes shelter near a community of women who recognize this dehumanization and try to rectify it. They bathed James Robert, put him in a collared shirt and a wool suit, greased his hair, fed him candy, and kissed him goodnight. After this attempt to re-humanize him, James Robert returned to the water and almost drowns:
+
+                  [the judge] stepped into the river and seized up the drowning idiot, snatching it aloft by the heels like a great midwife and slapping it on the back to let the water out. […] he twisted the water from its hair and he gathered the naked and sobbing fool into his arms and carried it up into the camp and restored it among its fellows. (McCarthy, 270)</p>
+                <p>Though this might seem a sweet moment, the judge saved James Robert only to make him his personal pet. Someone gave James Robert alcohol and watched him dance by the fire. When the Native Americans raided the camp, they found the judge in bed with a young girl and James Robert present. James Robert followed the judge until he disappeared from the novel. The judge had no problem with treating others as though they were less than human; however, it was not merely his treatment of James Robert, but his outlook on humanity as a whole that was degrading.</p>
+                <p>During the final conversation between the kid and the judge, the latter picked apart a man across the bar. The judge criticized his lack of agency: “his life is so balked about by difficulty and become so altered of its intended architecture that he is little more than a walking hovel hardly fit to house the human spirit at all” (McCarthy, 343). The judge seemed to think this man’s existence was typical of humans, telling the kid to “Pick a man, any man” (McCarthy, 343), reaffirming his belief that every man is housed in every other. The inability of men to bend things outside themselves to their wills and realize their own destinies leads him, the judge, to devalue them. This sort of separation of oneself from inferior others had often been used to justify war and other acts of violence. Genocide Watch published a series of eight stages of genocide in 1988. The first three are classification―establishing an “us and them,” symbolization―naming these separate groups, and dehumanization― denying the humanity of the other group. The judge was not targeting a group and calling them less than human, but rather placing himself as suzerain and judge over a species he deemed more or less insignificant on the whole. The fear of dehumanization is that: “perceiving particular groups or individuals as subhuman can form the basis for justifying social and oral exclusion” (Vasiljevic and Viki, 137). This process leaves the dehumanized population vulnerable to violence on the immeasurable scales of the genocides society had witnessed in society as well as in the world of Blood Meridian. Science, for many years, was concerned with defending this process of dehumanization. An “anthropologist” named William Edwards: “postulated a basic distinction of people who are tall with long heads versus those who are shorter and have round heads, which foreshadowed the dichotomy of ‘Nordics’ compared with lesser breeds. He also contended that the physical differences would correspond to mental ones” (Jahoda, 14). This was a project of phrenology, a debunked pseudoscience that sought to uncover human nature by measuring the shapes of skulls. The judge pursued a similar study with the cranium of James Robert’s brother: “The judge reached out and took hold of the man’s head in his hands and began to explore its contours” (McCarthy, 249). The judge was very curious about the fact that James Robert’s brother was not similarly afflicted. As a man of both science and violence, the judge sought figure the world in such a way that he was above those whom he judged, much in the same way that similar, historical scalp-hunters would have imagined the victims of the genocide to which they contributed.</p>
+                <br>
+                <h3 class="title">CONCLUSION</h3>
+                <br>
+                <p class="initialp">Blood Meridian was rife with Tarot cards and similar archetypes. Analyzing these cards has led me down several paths. I explored the divided heart of the kid—the way in which the divided heart that the judge accuses him of having is illumined by his connection to the Four of Cups. This analysis required delving into the judge’s religious beliefs, if they can be called so, and the kid’s conviction that there was more to be felt. I, then, compared the judge to the Judgment card and reemphasized this conflict between mercy and judgment played out by this paper’s focal characters. Finally, the judge resembled a perverted version of the Fool, one mixed with the Devil. The judge confidently strode along the edge of the cliff with his dehumanized pet James Robert in tow. The judge considered himself a man of science, a man with an airtight philosophy, and does not question himself as he dehumanized all mankind in order to justify obscene acts of violence. Just as McCarthy opened the novel with a quote recounting the discovery of evidence for a genocide thousands of years old, I will close this paper with a quote from Alan McGlashan, a pilot in the first World War and a psychiatrist in the second. It similarly illustrated the real world philosophy of war as a nihilistic philosophy written into human nature:
+
+                 War is the punishment of man’s disbelief in those forces within himself. It is the cruel reaffirmation of those powers which the ego can never command or subdue. And disastrous as the cost may be, something in the depths of man is mysteriously assuaged by this release of daemonic and destructive energies. There is a fierce satisfaction in living under the rule of the Early Gods. There is dignity in facing powers beyond us, and indifferent to us. To be blind to this, to fail to grasp its difficult meaning, is to let slip the golden Ariadne’s thread that may lead man at last out of the stinking labyrinth of War. (36-7)</p>
+                <p>Not only does this beautifully capture McCarthy’s style—with ancient indifferent gods and the veneration of war, but it also described the nature of the kid’s divided heart. The kid rejected the judge―why? He fought against his own nature and his inclination for violence in defense of the human spirit. The kid “fails to grasp its difficult meaning,” and only fought harder against his own shadow as it manifested in the judge. Readers, like the kid, cognitively or even spiritually knew that humans have no need to partake in war and violence, but to dismiss them from human nature was to underestimate our capabilities to apply science and religion to justify cruelty of which all humans are capable. The judge used twisted logic to marry barbarity and moral reasoning; the kid struggled to oppose the judge’s nihilism with a belief system that allowed for humans to be violent while still being deemed good by some undefined objective moral truth.</p>
+                <br><br>
+                <h3 class="title">Works Cited</h3>
+                <br>
+                <ul>
+                	<li>
+                		Bradford, Shanna. “Divination and Symbolism in Blood Meridian.” Southwest American Literature. 1.40 (2014): 		 19-30. Web.
+                	</li>
+                	<li>
+                		“clemency, n.” OED Online, Oxford University Press, March 2018, www.oed.com/view/Entry/34153. Accessed 11 April 2018.
+                	</li>
+                	<li>
+                		Greer, Mary K. The Complete Book of Tarot Reversals. Woodbury, Minnesota: Llewellyn Publications: 2002. Web.
+                	</li>
+                	<li>
+                		Jahod, Gustav. “An Anthropological History of Dehumanization from Late-18th to Mid-20th Centuries.” 			 Humanness and Dehumanization. Ed. Paul G. Bain, Jeroen Vaes, and Jacques Philippe Leyens. New York: Psychology Press, 2014. Web.
+                	</li>
+                	<li>
+                		McCarthy, Cormac. Blood Meridian. New York: Vintage, 1992.
+                	</li>
+                	<li>
+                		McGlashan, Alan. The Savage and Beautiful Country: The Secret Life of the Mind. Einsiedeln, Switzerland: Daimon Publishers, 1988. Web.
+                	</li>
+                	<li>
+                		Nichols, Sallie. Jung and Tarot: An Archetypal Journey. York Beach, Maine: Weiser Books, 1980. Print.
+                	</li>
+                	<li>
+                		Place, Robert M. The Tarot: History, Symbolism, and Divination. New York: Penguin Books Ltd, 2005. Print.
+                	</li>
+                	<li>
+                		Sepich, John. Notes on Blood Meridian. Austin: University of Texas Press, 2008. Print. Stinson, Emily. “Blood Meridian’s Man of Many Masks: Judge Holden as Tarot’s Fool.” Southwest American Literature. 1.33 2007: 9-21. Web.
+                	</li>
+                	<li>
+                		Vasiljevic, Milica and G. Tendayi Viki. “Dehumanization, Moral Disengagement, and Public Attitudes to Crime 		 and Punishment.” Humanness and Dehumanization. Ed. Paul G. Bain, Jeroen Vaes, and Jacques Philippe. New York: Psychology Press, 2014. Web.
+                	<li>
+                		Images from the Waite-Smith Tarot deck from http://www.tarotlore.com/tarot-cards/ accessed 5/4/2016
+                	</li>
+                <ul>
+                  <br><br><br>
+                  <p><center><a href="#top-A3">"Jump to top of the Article"</a></center></p>
+                  <br><br>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <footer class="row text-center pagefoot">
+    <div class="container-fluid row" id="footerdiv">
+
+      <div class="col-lg-4 col-xl-4 col-md-4 col-sm-12 col-12">
+        <div class="container-flex" id="footercol1">
+          <h4 class="footersectionheader">© 2021 Copyright</h4>
+          <br>
+          <p class="footercoltext"> <a href="#Sara">Sara Amayeh</a> , <a href="#Maede">Maede Hajjari</a></p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-xl-4 col-md-4 col-sm-12 col-12">
+        <div class="container-flex" id="footercol2">
+          <h4 class="footersectionheader">Our Contacts</h4>
+          <p class="footercoltext">
+            <br>
+            <a href="mailto:sara.amayeh@studio.unibo.it">sara.amayeh@studio.unibo.it</a>
+            <br>
+            <a href="mailto:maede.hajjari@studio.unibo.it">maede.hajjari@studio.unibo.it</a>
+            <br>
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-xl-4 col-md-4 col-sm-12 col-12">
+        <div class="container-flex" id="footercol3">
+          <h4 class="footersectionheader">Affiliations</h4>
+          <p class="footercoltext">
+            Digital Humanities and Digital Knowledge;
+            <br>
+            Classical Philology and Italian Studies;
+            <br>
+            University of Bologna
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/jsswap.js"></script>
+  <script type="text/javascript" src="js/get_articles.js"></script>
+  <script type="text/javascript" src="js/get_metadata.js"></script>
+  <script type="text/javascript" src="js/highlight.js"></script>
+  <script>
+    function metaDataHideShow(){
+      var element = document.getElementById('meta-section');
+      console.log(element.style.width);
+      if(element.style.width == '0%' || !element.style.width){
+        element.style.width = '32.5%';
+      }else{
+        element.style.width = '0%';
+      }
+    }
+  </script>
+</body>
+
+</html>
