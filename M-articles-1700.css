@@ -3,7 +3,7 @@
 }
 
 .default-style {
-  background-image: url(./IMG/BG1700.jpg);
+  background-image: url(IMG/BG1700.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-size: 100% 100%;
@@ -17,7 +17,7 @@
 }
 
 #article1 .bg-1 {
-  background-image: url(./IMG/BG1700.jpg);
+  background-image: url(IMG/BG1700.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-size: 100% 100%;
@@ -31,7 +31,7 @@
 }
 
 #article2 .bg-2 {
-  background-image: url(./IMG/BG1700.jpg);
+  background-image: url(IMG/BG1700.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-size: 100% 100%;
@@ -45,7 +45,7 @@
 }
 
 #article3 .bg-3 {
-  background-image: url(./IMG/BG1700.jpg);
+  background-image: url(IMG/BG1700.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-size: 100% 100%;
