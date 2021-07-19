@@ -1,0 +1,446 @@
+.box{
+font-family: Trebuchet MS;
+padding: 20px 20px 10px 20px;
+text-align: justify;
+}
+
+
+#title {
+  font-family: helvetica;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 40px;
+}
+#author{
+  font-family: helvetica;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 20px;
+}
+#abs{
+  font-family: helvetica;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#firstp{
+  font-family: Trebuchet ;
+  font-size: 15px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+#intro{
+  font-family: helvetica;
+  font-size: 22px;
+  font-weight: bold;
+  padding-left: 18px;
+
+}
+
+.notes{
+
+  font-family: helvetica;
+  font-size: 15px;
+}
+
+h3{
+  font-family: helvetica;
+  font-size: 22px;
+  font-weight: bold;
+  padding-left: 18px;
+}
+
+#divination{
+  font-family: helvetica;
+  font-size: 22px;
+  font-weight: bold;
+  padding-left: 18px;
+
+}
+
+p{
+  font-family: Trebuchet ;
+  font-size: 18px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.title2{
+  font-family: helvetica;
+  font-size: 22px;
+  font-weight: bold;
+  padding-left: 18px;
+}
+
+.hermetric{
+  font-family: helvetica;
+  font-size: 22px;
+  font-weight: bold;
+  padding-left: 18px;
+
+}
+#table{
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 13px;
+border-style: solid;
+border-width: 1px;
+border-color: black;
+}
+table, td, th {
+  border: 1px solid black;
+}
+
+td {
+  text-align: center;
+}
+table tr th {
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+  height:10px;
+}
+
+.tg  {border-collapse:collapse;border-spacing:0;}
+.td{border-color:black;border-style:solid;border-width:2px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.th{border-color:black;border-style:solid;border-width:2px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-ao2g{border-color:#333333;text-align:center;vertical-align:top}
+
+
+#jayanti{
+  font-family: Trebuchet ;
+  font-size: 15px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 0px;
+}
+
+#kaiser{
+  font-family: Trebuchet ;
+  font-size: 15px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 0px;
+}
+
+.dum{
+  font-family: Trebuchet ;
+  font-size: 15px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 0px;
+}
+
+.world{
+  font-family: Trebuchet ;
+  font-size: 15px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 0px;
+}
+
+.fig{
+  font-size: 15px;
+  text-align: center;
+}
+
+.imagetwo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 0px;
+  width: 250px;
+  height:250px;
+
+}
+.imageone{
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 0px;
+  width: 300px;
+  height:250px;
+}
+
+.last{
+  font-family: helvetica;
+  font-size: 18px;
+  font-weight: bold;
+  padding-left: 18px;
+}
+
+.ref{
+  font-family: helvetica;
+  font-size: 15px;
+  font-weight: ;
+  padding-left: 22px;
+}
+
+/* from here code for second article */
+
+.riz{
+  font-family: helvetica;
+  font-size: 12px;
+  text-align: center;
+}
+
+
+.clearfix {
+  overflow: auto;
+  font-family: Trebuchet ;
+  font-size: 18px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.img2 {
+  float: right;
+  width:200px;
+  height:350px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+
+table.unstyledTable {
+  border: 2px solid #000000;
+  width: 361px;
+  height: 300px;
+}
+table.unstyledTable td, table.unstyledTable th {
+  border: 2px solid #151515;
+  padding: 3px 2px;
+}
+table.unstyledTable tbody td {
+  font-size: 13px;
+  text-align: center;
+}
+table.unstyledTable thead {
+  background: #DDDDDD;
+  border-bottom: 2px solid #444444;
+  color: black;
+}
+table.unstyledTable thead th {
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  border-left: 2px solid #D0E4F5;
+}
+table.unstyledTable thead th:first-child {
+  border-left: none;
+}
+
+table.unstyledTable tfoot td {
+  font-size: 14px;
+}
+
+.table-one{
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  font-size: 13px;
+font-family: helvetica;
+color:black;
+}
+
+#table-second{
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  font-size: 13px;
+  font-family: helvetica;
+  color:black;
+
+}
+
+.table-third{
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  font-size: 13px;
+  font-family: helvetica;
+  color:black;
+}
+
+.table-four{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  font-size: 13px;
+  font-family: helvetica;
+  color:black;
+}
+
+.table-five{
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  font-size: 13px;
+  font-family: helvetica;
+  color:black;
+}
+
+.table-six{
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  font-size: 13px;
+  font-family: helvetica;
+  color:black;
+
+}
+
+table.table-second {border: 1px solid #000000;border-collapse: collapse; margin: 0 auto;  padding: 0px;table-layout: fixed;min-width: 50%;}
+table.table-second th {text-align: center;padding: 4px;border: 1px solid #000000;background:#ffffff;color:black;font-weight:bold;text-align:center}
+table.table-second td{padding: 4px;border: 1px solid #000000;}
+table.table-second tr{background-color: white;color:#000000;text-align:center;}
+
+
+table.table-third {border: 1px solid #000000;border-collapse: collapse; margin: 0 auto;  padding: 0px;table-layout: fixed;min-width: 100%;}
+table.table-third th {text-align: center;padding: 8px;border: 1px solid #000000;background:white;color:black;font-weight:bold;text-align:center}
+table.table-third td{padding: 8px;border: 1px solid #000000;}
+table.table-third tr{background-color: white;color:#000000;text-align:center;}
+
+table.table-four {border: 1px solid #000000;border-collapse: collapse; margin: 0 auto;  padding: 0px;table-layout: fixed;min-width: 100%;}
+table.table-four th {text-align: center;padding: 8px;border: 1px solid #000000;background:white;color:black;;font-weight:bold;text-align:center}
+table.table-four td{padding: 8px;border: 1px solid #000000;}
+table.table-four tr{background-color: white;color:#000000;text-align:center;}
+
+table.table-five {border: 1px solid #000000;border-collapse: collapse; margin: 0 auto;  padding: 0px;table-layout: fixed;min-width: 100%;}
+table.table-five th {text-align: center;padding: 8px;border: 1px solid #000000;background:white;color:black;font-weight:bold;text-align:center}
+table.table-five td{padding: 8px;border: 1px solid #000000;}
+table.table-five tr{background-color: white;color:#000000;text-align:center;}
+
+table.table-six {border: 1px solid #000000;border-collapse: collapse; margin: 0 auto;  padding: 0px;table-layout: fixed;min-width: 100%;}
+table.table-six th {text-align: center;padding: 8px;border: 1px solid #000000;background:white;color:black;font-weight:bold;text-align:center}
+table.table-six td{padding: 8px;border: 1px solid #000000;}
+table.table-six tr{background-color: white;color:#000000;text-align:center;}
+
+.lastimg{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:80%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.figlast{
+  font-family: helvetica;
+  font-size: 15px;
+  text-align: center;
+}
+
+
+/* css for third article */
+ #title3{
+   font-family: helvetica;
+   font-weight: bold;
+   font-size: 22px;
+   font-weight: bold;
+   text-align: left;
+   padding-top: 40px;
+
+ }
+
+ .subtitle{
+   font-family: helvetica;
+   font-size: 16px;
+   text-align: left;
+ }
+
+ .author3{
+   font-family: helvetica;
+   font-weight: bold;
+   font-size: 13px;
+   text-align: left;
+   padding-top: 25px;
+ }
+
+.dep{
+  font-family: helvetica;
+  font-weight: bold;
+  font-size: 11px;
+  text-align: left;
+  padding-top: px;
+}
+.email{
+  font-family: helvetica;
+  font-weight: bold;
+  font-size: 11px;
+  text-align: left;
+}
+
+.firstq{
+  font-family: helvetica;
+  font-size: 15px;
+  text-align: center;
+  font-style: italic;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: justify;
+}
+
+.quoted{
+  font-family: helvetica;
+  font-size: 12px;
+  text-align: center;
+  font-style: italic;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.saying{
+  font-family: Trebuchet ;
+  font-size: 15px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 0px;
+padding-top: 0px;
+}
+
+
+.h2title{
+  font-family: helvetica;
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 18px;
+  text-align: justify;
+}
+
+.htitle{
+  font-family: helvetica;
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 18px;
+  padding-right: 25px;
+}
+
+.adjustment{
+  width:400px;
+  height: 550px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 0px;
+  padding-top: 30px;
+
+}
+
+.imgcap{
+  font-family: helvetica;
+  font-size: 12px;
+  text-align: center;
+}

@@ -1,0 +1,728 @@
+/* #first-article div { */
+#first-article .bg-1 {
+  background-image: url(./tarot/bb.jpg);
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  background-size: 100% 100%;
+  font-family: vinq;
+  font-size: 21px;
+  font-weight: 200;
+  padding-top: 0;
+  text-align: justify;
+  height: 100%;
+  text-align: center;
+}
+
+.text-container-1 {
+  height: 75%;
+  height: 60%;
+  overflow-y: scroll;
+  margin-top: 8rem;
+  margin-right: -1rem;
+  overflow-x: hidden;
+  padding-right: 4rem;
+  padding-left: 50px;
+  text-align: justify;
+}
+
+@font-face {
+  font-family: matn;
+  src: url(oldmatn.ttf);
+}
+
+
+@font-face {
+  font-family: "initial";
+  src: url("initial.woff");
+}
+
+.title1 {
+  font-size: 28px !important;
+  font-weight: bold;
+  text-align: center !important;
+  font-family: vinq;
+  /* margin-top: 100px; */
+  /* padding-left: 100px;
+  padding-right: 100px;
+  margin-right: 100px;
+  margin-left: 100px; */
+  text-decoration: none !important;
+
+}
+
+
+.box {
+  overflow-y: unset !important;
+  padding-left: 35px;
+  padding-right: 26px;
+  padding-top: 150px;
+  margin-top: 0;
+  width: 100% !important;
+}
+
+#first-article .box h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 37px;
+  /* padding-top: 60px; */
+  margin-top: 2rem;
+}
+
+#first-article .box h5 {
+  text-align: center;
+  font-size: 22px;
+  padding-top: 20px;
+}
+
+#first-article .abs {
+  font-size: 17px;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+#initialp::first-letter {
+  font-family: "initial";
+  font-size: 45px;
+}
+
+#first-article .line {
+  width: 300px;
+  height: 100px;
+  /*background-image: url(./tarot/line.png);
+  background-size: 250px 35px;*/
+  margin: 0 auto;
+}
+
+#first-article .line h2 {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  text-align: left;
+  text-decoration: underline overline;
+  font-size: 25px;
+  text-align: center;
+}
+
+#herm .hermetric h2 {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  text-align: left;
+  text-decoration: underline overline;
+  font-size: 20px;
+  text-align: center;
+}
+
+.initialp::first-letter {
+  font-family: "initial";
+  font-size: 45px;
+}
+
+table {
+  table-layout: fixed;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table td {
+  width: auto;
+}
+
+table,
+th,
+td {
+  border: 2px solid black;
+  text-align: center;
+}
+
+tr:hover {
+  background-color: #a0937d;
+}
+
+.thead {
+  background-color: #d9c6a5;
+  font-size: 17px;
+}
+
+.tbody {
+  background-color: #f7e7bd;
+  font-size: 15px;
+}
+
+.divi::first-letter {
+  font-family: "initial";
+  font-size: 45px;
+}
+
+.mystery::first-letter {
+  font-family: "initial";
+  font-size: 45px;
+}
+
+#jayanti {
+  font-size: 18px;
+  border: 5px double #a0855b;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #f1d6ab;
+  border-style: ridge;
+  border-radius: 5px;
+  width: 90%;
+  text-align: justify;
+  margin-left: 20px;
+}
+
+.herm::first-letter {
+  font-family: "initial";
+  font-size: 45px;
+}
+
+#kaiser {
+  font-size: 12px;
+  border: 5px double #a0855b;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #f1d6ab;
+  border-style: ridge;
+  border-radius: 5px;
+  width: auto;
+  text-align: justify;
+  margin-left: 40px;
+}
+
+.dum {
+  font-size: 12px;
+  border: 5px double #a0855b;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #f1d6ab;
+  border-style: ridge;
+  border-radius: 5px;
+  width: auto;
+  text-align: justify;
+  margin-left: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.world {
+  font-size: 12px;
+  border: 5px double #a0855b;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #f1d6ab;
+  border-style: ridge;
+  border-radius: 5px;
+  width: auto;
+  text-align: justify;
+  margin-left: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+}
+
+p.fig {
+  border-left: 5px solid #810000;
+  font-size: 15px;
+}
+
+.figures {
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+.imageone {
+  width: 300px;
+  height: 250px;
+  filter: sepia(100%);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.imagetwo {
+  width: 210px;
+  height: 200px;
+  filter: grayscale(100%);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.trump {
+  font-size: 12px;
+  border: 5px double #a0855b;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #f1d6ab;
+  border-style: ridge;
+  border-radius: 5px;
+  width: auto;
+  text-align: justify;
+  margin-left: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#figure1 {
+  background-image: url(./tarot/figureone.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 400px 300px;
+  height: 300px;
+  position: relative;
+  filter: grayscale(100%);
+}
+
+.last {
+  font-size: 20px;
+  text-decoration: underline;
+  text-align: left;
+}
+
+.lastimg {
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+
+.figlast {
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.ack {
+  font-size: 18px;
+}
+
+.ref {
+  font-size: 18px;
+}
+
+/* here start second articles */
+/* #second-article div { */
+#second-article .bg-2 tr {
+  font-family: vinq;
+}
+
+#second-article .bg-2 {
+  background-image: url(./tarot/bb.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 100% 100%;
+  font-family: vinq;
+  font-size: 18px;
+  font-weight: 50;
+  padding-top: 0;
+  text-align: justify;
+  /* height: 500px; */
+  height: 100%;
+}
+
+.text-container-2 {
+  height: 75%;
+  height: 60%;
+  overflow-y: scroll;
+  margin-top: 7rem;
+  margin-right: -1rem;
+  overflow-x: hidden;
+  padding-right: 1rem;
+}
+
+@font-face {
+  font-family: "becker";
+  src: url("becker.woff");
+}
+
+#title2 {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  /* margin-top: 100px; */
+  margin-top: 55px;
+  border-style: solid;
+}
+
+#author {
+  font-size: 15px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.riz {
+  font-size: 13px;
+  text-align: center;
+}
+
+.img2 {
+  width: 150px;
+  height: 200px;
+  margin-right: 50px;
+  margin-left: auto;
+  display: block;
+  background-position: -9999px -9999px;
+  border: 5px solid rgb(158, 158, 158);
+  border-radius: 8px;
+}
+
+.img22 {
+  width: 150px;
+  height: 200px;
+  margin-left: 50px;
+  display: inline-block;
+  background-position: -9999px -9999px;
+  border: 5px solid rgb(158, 158, 158);
+  border-radius: 8px;
+}
+
+.clearfix {
+  background-position: -9999px -9999px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+#dd {
+  font-size: 20px !important;
+  text-decoration: underline;
+  text-align: left !important;
+  padding-top: 40px;
+}
+
+.lastt {
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 40px;
+  text-decoration: underline;
+  padding-bottom: 20px;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 25px;
+  background-position: -9999px -9999px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  background-position: -9999px -9999px;
+}
+
+.row {
+  background-position: -9999px -9999px;
+}
+
+.cap {
+  text-align: center;
+  font-size: 16px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+}
+
+.table-one {
+  background-position: -9999px -9999px;
+  text-align: center;
+}
+
+.table-one table {
+  border-collapse: collapse;
+}
+
+.table-one table,
+th,
+td {
+  border: 1px solid black;
+  text-align: center;
+}
+
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 75%;
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+
+#customers td,
+#customers th {
+  border: 2px solid #8e9775;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even) {
+  background-color: #e8e8e8;
+}
+
+#customers tr:hover {
+  background-color: #8e9775;
+}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: justify;
+  background-color: #d9c6a5;
+  color: #e8e8e8 !important;
+}
+
+#table-second {
+  background-position: -9999px -9999px;
+}
+
+.class-second {
+  background-position: -9999px -9999px;
+}
+
+#designtab {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 85%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+#designtab td,
+#designtab th {
+  border: 2px solid #8e9775;
+  padding: 8px;
+}
+
+#designtab tr:nth-child(even) {
+  background-color: #e8e8e8;
+}
+
+#designtab tr:hover {
+  background-color: #8e9775;
+}
+
+#designtab th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: justify;
+  background-color: #d9c6a5;
+  color: black !important;
+}
+
+.table-third {
+  background-position: -9999px -9999px;
+  width: 90%;
+  margin-left: 30px;
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+
+#third tr:nth-child(even) {
+  background-color: #e8e8e8;
+
+}
+
+#third th {
+  width: 50%;
+  margin-top: 45px;
+  margin-bottom: 45px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: justify;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: justify;
+  background-color: #d9c6a5;
+  color: #e8e8e8 !important;
+}
+
+.table-four {
+  background-position: -9999px -9999px;
+  width: auto;
+  height: auto;
+  padding-left: 25px;
+  padding-right: 20px;
+  width: 90%;
+  margin-left: 30px;
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+
+.table-four tr:nth-child(even) {
+  background-color: #e8e8e8;
+
+}
+
+.table-five {
+  background-position: -9999px -9999px;
+  width: auto;
+  height: auto;
+  padding-left: 25px;
+  padding-right: 20px;
+  width: 90%;
+  margin-bottom: 45px;
+  margin-top: 45px;
+  margin-left: 30px;
+}
+
+.table-five tr:nth-child(even) {
+  background-color: #e8e8e8;
+
+}
+
+.table-six {
+  background-position: -9999px -9999px;
+  width: auto;
+  height: auto;
+  padding-left: 25px;
+  padding-right: 20px;
+  width: 90%;
+  margin-left: 30px;
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+
+.table-six tr:nth-child(even) {
+  background-color: #e8e8e8;
+
+}
+
+.last {
+  background-position: -9999px -9999px;
+}
+
+.notes {
+  background-position: -9999px -9999px;
+}
+
+/* here start the third article */
+/* #third-article div { */
+#third-article .bg-3 {
+  background-image: url(./tarot/bb.jpg);
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  background-size: 100% 100%;
+  font-family: vinq;
+  font-size: 18px;
+  font-weight: 50;
+  padding-top: 0;
+  text-align: justify;
+  /* height:500px; */
+  height: 100%;
+}
+
+.text-container-3 {
+  height: 75%;
+  height: 60%;
+  overflow-y: scroll;
+  margin-top: 8rem;
+  margin-right: -1rem;
+  overflow-x: hidden;
+  padding-right: 4rem;
+  padding-left: 50px;
+  text-align: justify;
+}
+
+@font-face {
+  font-family: vinq;
+  src: url(vinq.woff);
+}
+
+@font-face {
+  font-family: exta;
+  src: url(exta.woff);
+}
+
+
+#third-article h2 {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  text-align: left;
+  text-decoration: underline overline;
+  font-size: 25px;
+  text-align: center;
+
+}
+
+#title3 {
+  padding-top: 10px;
+  /* padding-left: 15px;
+  padding-right: 15px; */
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  /*border-style: solid;*/
+  text-decoration: underline;
+}
+
+.subtitle {
+  font-size: 18px;
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+}
+
+.author3 {
+  font-size: 15px;
+  padding-top: 15px;
+  text-align: center;
+}
+
+.dep {
+  font-size: 13px;
+  text-align: center;
+}
+
+.email {
+  font-size: 13px;
+  text-align: center;
+}
+
+.firstq {
+  background-position: -9999px -9999px;
+}
+
+
+.firstq {
+  font-size: 12px;
+  border: 5px double #a0855b;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #f1d6ab;
+  border-style: ridge;
+  border-radius: 5px;
+  width: auto;
+  text-align: justify;
+  margin-left: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.adjustment {
+  filter: grayscale(100);
+  width: 300px;
+  height: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+
+}
+
+.extracontainer {
+  background-color: #0F1B07;
+}
+
+
+.card-bg-1 {
+  background-color: #DE7A22;
+}
+
+.card-bg-2 {
+  background-color: #20948B;
+}
+
+.card-bg-3 {
+  background-color: #6AB187;
+}
+
+#F4CC70
