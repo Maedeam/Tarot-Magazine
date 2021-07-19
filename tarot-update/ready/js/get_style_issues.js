@@ -27,6 +27,12 @@
                  $('link[href="assets/css/home1900.css"]').removeAttr('disabled');
 
                  break;
+             case "home2021":
+                 $('link[rel="stylesheet alternative"]').attr('disabled', 'true');
+                 $('link[href="assets/css/main.css"]').attr('disabled', 'true');
+                 $('link[href="assets/css/home2021.css"]').removeAttr('disabled');
+
+                 break;
 
              default:
                  console.log("ti prego non comparire");
