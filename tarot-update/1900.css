@@ -12,7 +12,7 @@
 /* #first-article div { */
 
 #first-article .bg-1 {
-    background-image: url(./tarot/vint1.svg);
+    background-image: url(./tarot/vint.jpg);
     background-repeat: no-repeat;
     /* background-size: cover; */
     background-size: 100% 100%;
@@ -276,7 +276,7 @@ p.fig {
 }
 
 #second-article .bg-2 {
-    background-image: url(./tarot/foolback.png) !important;
+    background-image: url(./tarot/vint.jpg) !important;
     background-repeat: no-repeat;
     background-size: cover;
     background-size: 100% 100%;
@@ -506,7 +506,7 @@ td {
 /* #third-article div { */
 
 #third-article .bg-3 {
-    background-image: url(./tarot/backt.jpg);
+    background-image: url(./tarot/vint.jpg);
     background-repeat: no-repeat;
     /* background-size: cover; */
     background-size: 100% 100%;
