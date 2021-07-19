@@ -16,15 +16,13 @@
     background-repeat: no-repeat;
     /* background-size: cover; */
     background-size: 100% 100%;
-    font-family: chopin;
+    font-family: drug !important;
     color: black;
     font-size: 21px;
     font-weight: 200;
     padding-top: 0;
     text-align: justify;
     height: 100%;
-    padding-left: 80px;
-    padding-right: 30px;
 }
 
 .text-container-1 {
@@ -37,17 +35,23 @@
     padding-right: 1rem;
 }
 
+@font-face {
+    font-family: vintage;
+    src: url("chopin.ttf");
+}
 
-
-
+@font-face {
+    font-family: "drug";
+    src: url("chopin.ttf");
+}
 
 #divi {
-    font-family: chopin;
+    font-family: gol;
     font-size: 30px;
 }
 
-.title1 {
-    font-family: chopin;
+#title1 {
+    font-family: vintage !important;
     font-size: 20px;
     text-align: center;
     /* margin-top: 100px; */
@@ -59,7 +63,7 @@
     padding-left: 35px;
     padding-right: 26px;
     padding-top: 150px;
-    margin-top: 100px;
+    margin-top: 0;
     width: 100% !important;
 }
 
@@ -69,7 +73,6 @@
     font-size: 37px;
     /* padding-top: 60px; */
     margin-top: 2rem;
-    color:#B34180;
 }
 
 #first-article .box h5 {
@@ -85,7 +88,7 @@
 }
 
 #initialp::first-letter {
-    font-family: chopin;
+    font-family: "initial";
     font-size: 45px;
 }
 
@@ -107,7 +110,7 @@
 }
 
 .initialp::first-letter {
-    font-family: chopin;
+    font-family: "initial";
     font-size: 45px;
 }
 
@@ -144,58 +147,63 @@ tr:hover {
 }
 
 .divi::first-letter {
-    font-family: chopin;
+    font-family: "initial";
     font-size: 45px;
 }
 
 .mystery::first-letter {
-    font-family: chopin;
+    font-family: "initial";
     font-size: 45px;
 }
 
 #jayanti {
-    font-size: 15px;
+    font-size: 18px;
+    border: 5px double #a0855b;
     padding-left: 30px;
     padding-right: 30px;
+    background-color: #f1d6ab;
     border-style: ridge;
+    border-radius: 5px;
     width: 90%;
     text-align: justify;
     margin-left: 20px;
-    color:#D8AC9C;
 }
 
 .herm::first-letter {
-    font-family: chopin;
+    font-family: "initial";
     font-size: 45px;
 }
 
 #kaiser {
-  font-size: 15px;
-  padding-left: 30px;
-  padding-right: 30px;
-  border-style: ridge;
-  width: 90%;
-  text-align: justify;
-  margin-left: 20px;
-  color:#D8AC9C;
+    font-size: 12px;
+    border: 5px double #a0855b;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #f1d6ab;
+    border-style: ridge;
+    border-radius: 5px;
+    width: 350px;
+    text-align: justify;
+    margin-left: 40px;
 }
 
 .dum {
-    font-size: 15px;
-    color: #D8AC9C;
+    font-size: 20px;
+    color: red;
     margin-top: 2px;
-    font-style: italic;
 }
 
 .world {
-  font-size: 15px;
-  padding-left: 30px;
-  padding-right: 30px;
-  border-style: ridge;
-  width: 90%;
-  text-align: justify;
-  margin-left: 20px;
-  color:#D8AC9C;
+    font-size: 12px;
+    border: 5px double #a0855b;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #f1d6ab;
+    border-style: ridge;
+    border-radius: 5px;
+    width: 350px;
+    text-align: justify;
+    margin-left: 40px;
 }
 
 p.fig {
@@ -231,14 +239,16 @@ p.fig {
 }
 
 .trump {
-  font-size: 15px;
-  padding-left: 30px;
-  padding-right: 30px;
-  border-style: ridge;
-  width: 90%;
-  text-align: justify;
-  margin-left: 20px;
-  color:#D8AC9C;
+    font-size: 12px;
+    border: 5px double #a0855b;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #f1d6ab;
+    border-style: ridge;
+    border-radius: 5px;
+    width: 350px;
+    text-align: justify;
+    margin-left: 40px;
 }
 
 .last {
@@ -262,7 +272,7 @@ p.fig {
 /* #second-article div { */
 
 #second-article .bg-2 tr {
-    font-family: chopin;
+    font-family: "Courier New", Helvetica, sans-serif;
 }
 
 #second-article .bg-2 {
@@ -270,27 +280,28 @@ p.fig {
     background-repeat: no-repeat;
     background-size: cover;
     background-size: 100% 100%;
-    font-family: chopin;
+    font-family: becker;
     font-size: 18px;
     font-weight: 50;
     padding-top: 0;
     text-align: justify;
     /* height: 500px; */
-    height: 100;
-    padding-left: 80px;
-    padding-right: 30px;
+    height: 100%;
 }
 
 .text-container-2 {
-  height: 68%;
-  overflow-y: scroll;
-  margin-top: 7rem;
-  margin-right: -1rem;
-  overflow-x: hidden;
-  padding-right: 1rem;
+    height: 68%;
+    overflow-y: scroll;
+    margin-top: 7rem;
+    margin-right: -1rem;
+    overflow-x: hidden;
+    padding-right: 1rem;
 }
 
-
+@font-face {
+    font-family: "becker";
+    src: url("chopin.ttf");
+}
 
 #title2 {
     font-size: 20px;
@@ -301,7 +312,7 @@ p.fig {
     border-style: solid;
 }
 
-.author {
+#author {
     font-size: 15px;
     text-align: center;
     padding-top: 30px;
@@ -385,19 +396,19 @@ td {
 }
 
 #customers {
-    font-family: chopin;
+    font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 85%;
 }
 
 #customers td,
 #customers th {
-    border: 2px solid #D8AC9C;
+    border: 2px solid #8e9775;
     padding: 8px;
 }
 
 #customers tr:nth-child(even) {
-    background-color: #D8AC9C;
+    background-color: #e8e8e8;
 }
 
 #customers tr:hover {
@@ -408,8 +419,8 @@ td {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: justify;
-    background-color: #D8AC9C;
-    color: black !important;
+    background-color: #aa3a3a;
+    color: #e8e8e8 !important;
 }
 
 #table-second {
@@ -421,7 +432,7 @@ td {
 }
 
 #designtab {
-    font-family: chopin;
+    font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 85%;
 }
@@ -444,8 +455,8 @@ td {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: justify;
-    background-color: #D8AC9C;
-    color: #black !important;
+    background-color: #aa3a3a;
+    color: #e8e8e8 !important;
 }
 
 .table-third {
@@ -499,70 +510,49 @@ td {
     background-repeat: no-repeat;
     /* background-size: cover; */
     background-size: 100% 100%;
-    font-family: chopin;
+    font-family: vinq;
     font-size: 18px;
     font-weight: 50;
     padding-top: 0;
     text-align: justify;
     /* height:500px; */
     height: 100%;
-    padding-left: 80px;
-    padding-right: 70px;
-    padding-top: 30px;
 }
 
-.adjustment{
-  width: 250px;
-  height: 250px;
-  filter: grayscale(70%);
-  margin: auto;
-  display: block;
- margin-left: auto;
- margin-right: auto;
-
-}
-#articletwo{
-  column-count: 2;
-  margin-top: 2em;
-  margin-right: 3em;
-  margin-bottom: 2em;
-  margin-left: 0em;
-  text-align: justify;
-  column-width: auto;
-}
-
-.titletext{
-  text-align: center;
-}
 .text-container-3 {
-  height: 80%;
-  height: 70%;
-  overflow-y: scroll;
-  margin-top: 5rem;
-  margin-right: -1rem;
-  overflow-x: hidden;
-  padding-right: 1rem;
+    height: 60%;
+    overflow-y: scroll;
+    margin-top: 12rem;
+    margin-right: -1rem;
+    overflow-x: hidden;
+    padding-right: 4rem;
+    padding-left: 4rem;
 }
 
 @font-face {
-    font-family: chopin;
+    font-family: vinq;
     src: url(chopin.ttf);
 }
 
+@font-face {
+    font-family: exta;
+    src: url(chopin.ttf);
+}
 
-
+.titletext,
+.kadr {
+    text-align: center;
+}
 
 #title3 {
-  font-size: 28px!important;
-  font-weight: bold;
-  text-align: center!important;
-  font-family: cardinal;
-  /* margin-top: 100px; */
-  padding-left: 100px;
-  padding-right: 100px;
-  color: #B34180;
-  margin-right: 100px;
-  margin-left: 100px;
+    padding-top: 10px;
+    /* padding-left: 15px;
+   padding-right: 15px; */
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    /*border-style: solid;*/
+    text-decoration: underline;
 }
 
 .subtitle {
@@ -572,42 +562,26 @@ td {
     padding-right: 30px;
 }
 
-.author3{
-  text-align: center;
-}
-
-.dep{
-  text-align: center;
-}
-.email{
-  text-align: center;
-}
-
 .firstq {
     background-position: -9999px -9999px;
-    font-size: 15px;
-    padding-left: 30px;
-    padding-right: 30px;
-    border-style: ridge;
-    width: 90%;
-    text-align: justify;
-    margin-left: 20px;
-    color:#D8AC9C;
 }
 
 .extracontainer {
-    margin-top: 3.5rem;
-    background-color: #898B8A;
+    background-color: #5C821A;
 }
 
 .card-bg-1 {
-    background-color: #835858;
+    background-color: #9400b9;
 }
 
 .card-bg-2 {
-    background-color: #7D5A5A;
+    background-color: #2D4262;
 }
 
 .card-bg-3 {
     background-color: #73605B;
+}
+
+body {
+    font-family: vinq !important;
 }
