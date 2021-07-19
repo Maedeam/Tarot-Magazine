@@ -4,29 +4,29 @@ function main() {
     var jsonArticle = {
         "articles": [{
                 "number": "1",
-                "title": "A Sociology of Tarot",
+                "title": "JAPANESE TAROT CARDS",
                 "url": "article1.html",
                 "box": "article1_box",
-                "author": "Mike Soteric",
+                "author": "Laura Miller",
                 "authordescription": "none",
                 "date_article": "December 1, 2020"
             },
             {
                 "number": "2",
-                "title": "TAROT IN BOLOGNA: DOCUMENTS FROM THE UNIVERSITY LIBRARY",
+                "title": "TAMPA TAROT",
                 "url": "article2.html",
                 "box": "article2_box",
-                "author": "Franco Pratesi",
+                "author": "Stephanie Tripp",
                 "authordescription": "none",
                 "date_article": "May 13, 2020"
 
             },
             {
                 "number": "3",
-                "title": "THE CARDINAL IMPORTANCE OF NAMES",
+                "title": "TAROT IN BLOOD MERIDIAN",
                 "url": "article3.html",
                 "box": "article3_box",
-                "author": "Colleen Walsh",
+                "author": "Demetria Lee",
                 "authordescription": "none",
                 "date_article": "May 14, 2020"
 
