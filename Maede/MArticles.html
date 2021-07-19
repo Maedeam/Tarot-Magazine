@@ -6,8 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="shortcut icon" href="IMG/Tarot-Simble.png" type="image/png" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="Main.css" type="text/css" id="pagestyle">
-    <link rel="stylesheet" href="M-articles-Default.css">
+    <link rel="stylesheet"  href="Main.css" type="text/css" id="pagestyle">
+    <link rel="stylesheet alternative" href="assets/css/default.css" >
+    <link rel="stylesheet alternative" href="assets/css/home1700.css"  disabled=true>
+    <link rel="stylesheet alternative" href="assets/css/home1800.css"  disabled=true>
+    <link rel="stylesheet alternative" href="assets/css/home1900.css"  disabled=true>
+    <link rel="stylesheet alternative" href="assets/css/home2021.css"  disabled=true>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <title>Tarot Magazine Articles</title>
@@ -79,7 +83,7 @@
 
 <body class="home">
 
-    <nav class="navbar navbar-custom navbar-expand-md navbar-light justify-content-md-center justify-content-start fixed-top">
+    <!-- <nav class="navbar navbar-custom navbar-expand-md navbar-light justify-content-md-center justify-content-start fixed-top">
         <div class="container-fluid">
             <div class="navbar-header justify-align-center">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -96,11 +100,11 @@
               Historical Theme
             </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="IssueStage.html">Default</a>
-                            <a class="dropdown-item" href="IssueStage.html">1700 s</a>
-                            <a class="dropdown-item" href="IssueStage.html">1800 s</a>
-                            <a class="dropdown-item" href="IssueStage.html">1900 s</a>
-                            <a class="dropdown-item" href="IssueStage.html">2000 s</a>
+                            <a class="dropdown-item" href="#" id="default">Default</a>
+                            <a class="dropdown-item" href="#" id="home1700">1700 s</a>
+                            <a class="dropdown-item" href="#" id="home1800">1800 s</a>
+                            <a class="dropdown-item" href="#" id="home1900">1900 s</a>
+                            <a class="dropdown-item" href="#" id="home2021">2000 s</a>
                         </div>
                     </li>
                     <li class="nav-item active">
@@ -113,6 +117,43 @@
                         <a class="nav-link" href="Documentation.html">Documentation</a>
                     </li>
                 </ul>
+            </div>
+        </div>
+    </nav> -->
+
+    
+    <nav class="navbar navbar-custom navbar-expand-md navbar-light justify-content-md-center justify-content-start fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header justify-align-center">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+            </div>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="About-Us.html">About Us</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="Disclaimer.html">Disclaimer</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="Documentation.html">Documentation</a>
+                        </li>
+
+                    </ul>
+                    <ul class="navbar-nav ms-auto" id="stylesglasses">
+                        <li class="nav-item"><span id="home1700" class="styles hvr-bounce-in" title="home1700"><img class="icone" src="./IMG/icons/1.jpg"></span></li>
+                        <li class="nav-item"><span id="home1800" class="styles hvr-bounce-in" title="home1800"><img class="icone" src="./IMG/icons/2.jpg"></span></li>
+                        <li class="nav-item"><span id="home1900" class="styles hvr-bounce-in" title="home1900"><img class="icone" src="./IMG/icons/3.jpg"></span></li>
+                        <li class="nav-item"><span id="home2021" class="styles  hvr-bounce-in" title="home2021"><img class="icone" src="./IMG/icons/4.jpg"></span></li>
+                        <li class="nav-item"><span id="default" class="styles  hvr-bounce-in" title="default"><img class="icone" src="./IMG/icons/refreshing.svg"></span></li>
+                        <li class="nav-item"><a class="btn btn-info btn-sm " onclick="metaDataHideShow()">Press Me</a></li>
+                    </ul>
             </div>
         </div>
     </nav>
@@ -173,7 +214,7 @@
         <div class="meta-section" id="meta-section">
             <div class="card">
                 <div class="card-header">
-                    <button class="btn btn-info btn-sm btn-meta" onclick="metaDataHideShow()">MD</button>
+                    <button class="btn btn-info btn-sm btn-meta" onclick="metaDataHideShow()" id="pressMeBtn">MD</button>
                     <strong>Metadata</strong>
                 </div>
                 <ul class="list-group list-group-flush" id="articlescheckbox">
@@ -1179,19 +1220,24 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="jsswap.js"></script>
+    <!-- <script type="text/javascript" src="jsswap.js"></script> -->
     <script type="text/javascript" src="js/get_articles.js"></script>
     <script type="text/javascript" src="js/get_metadata.js"></script>
     <script type="text/javascript" src="js/highlight.js"></script>
+    <script type="text/javascript" src="js/get_style_issues.js"></script>
     <script>
         function metaDataHideShow() {
             var element = document.getElementById('meta-section');
+            var pressMeBtn = document.getElementById('pressMeBtn');
             console.log(element.style.width);
             if (element.style.width == '0%' || !element.style.width) {
                 element.style.width = '32.5%';
+                pressMeBtn.style.display = 'inline-block';
             } else {
                 element.style.width = '0%';
+                pressMeBtn.style.display = 'none';
             }
+
         }
     </script>
 </body>
